@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_plate_jewelry" targetNamespace="http://tempuri.org/ds_plate_jewelry.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_plate_jewelry.xsd"
+	xmlns:mstns="http://tempuri.org/ds_plate_jewelry.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_plate_jewelry" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="inv_JEWELRY">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="INVENTORY_ID" type="xs:int" />
+							<xs:element name="ITEM_SIZE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="WEIGHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="JEWELTYPE_ID" type="xs:int" />
+							<xs:element name="JEWELSUBTYPE_ID" type="xs:int" />
+							<xs:element name="METAL_ID" type="xs:int" />
+							<xs:element name="MIDDLESTONE_ID" type="xs:int" />
+							<xs:element name="BRAND_ID" type="xs:int" />
+							<xs:element name="REPORT_ID" type="xs:int" />
+							<xs:element name="SETTING_ID" type="xs:int" />
+							<xs:element name="COLLECTION_ID" type="xs:int" />
+							<xs:element name="RELATEDITEM_ID" type="xs:int" />
+							<xs:element name="MIDDLESTONE_DESC" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="inv_INVENTORY">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="PLATETYPE" type="xs:int" />
+							<xs:element name="CATEGORY_ID" type="xs:int" />
+							<xs:element name="SUBCATEGORY_ID" type="xs:int" />
+							<xs:element name="LOCATION_ID" type="xs:int" />
+							<xs:element name="BRANCHNUMBER" type="xs:int" />
+							<xs:element name="SUPPLIERNUMBER" type="xs:int" />
+							<xs:element name="ITEMNUMBERINT" type="xs:int" />
+							<xs:element name="ITEMNUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="ITEMCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="SHOPSTATUS" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ITEMDELETED" type="xs:boolean" minOccurs="0" />
+							<xs:element name="NO_ORDERALONE" type="xs:boolean" minOccurs="0" />
+							<xs:element name="NO_PUBLICAUCTION" type="xs:boolean" minOccurs="0" />
+							<xs:element name="STATUS_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="LANG1_DESCRIPTION" type="xs:string" minOccurs="0" />
+							<xs:element name="LANG2_DESCRIPTION" type="xs:string" minOccurs="0" />
+							<xs:element name="LANG3_DESCRIPTION" type="xs:string" minOccurs="0" />
+							<xs:element name="LANG4_DESCRIPTION" type="xs:string" minOccurs="0" />
+							<xs:element name="LANG5_DESCRIPTION" type="xs:string" minOccurs="0" />
+							<xs:element name="LANG6_DESCRIPTION" type="xs:string" minOccurs="0" />
+							<xs:element name="CREATEDATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ONPROCESS" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ONAUCTION" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ONSPECIAL" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ONSPECIAL_FROM_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ONSPECIAL_TO_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="QTYONSTOCK_CUR" type="xs:int" minOccurs="0" />
+							<xs:element name="QTYONSTOCK_MIN" type="xs:int" minOccurs="0" />
+							<xs:element name="PURCHASE_PRICE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="APPRAISAL_PRICE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DEALER_PRICE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SELL_PRICE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SPECIAL_SELL_PRICE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SPECIAL_DEALER_PRICE" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NOTES" type="xs:string" minOccurs="0" />
+							<xs:element name="ICON_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="PICTURE_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="PICTURE_HIRES_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="CERTIFICATE_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="MOVIE_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="GALLERY_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="BANNER_NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="LASTMODIFY_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="LASTMODIFY_USER" type="xs:string" minOccurs="0" />
+							<xs:element name="LASTMODIFY_USER_ID" type="xs:int" />
+							<xs:element name="INDEXWORDS" type="xs:string" minOccurs="0" />
+							<xs:element name="REMARKS" type="xs:string" minOccurs="0" />
+							<xs:element name="CLUB_ITEM" type="xs:boolean" minOccurs="0" />
+							<xs:element name="AUTOGENERATED" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ITEM_SOLD" type="xs:boolean" minOccurs="0" />
+							<xs:element name="SIMILAR_ITEMS" type="xs:string" minOccurs="0" />
+							<xs:element name="smartsort" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_plate_jewelryKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:inv_JEWELRY" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="ds_plate_jewelryKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:inv_INVENTORY" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:keyref name="inv_INVENTORYinv_JEWELRY" refer="ds_plate_jewelryKey2">
+			<xs:selector xpath=".//mstns:inv_JEWELRY" />
+			<xs:field xpath="mstns:INVENTORY_ID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

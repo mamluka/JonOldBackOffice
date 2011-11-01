@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_appraisal" targetNamespace="http://tempuri.org/ds_appraisal.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_appraisal.xsd" xmlns:mstns="http://tempuri.org/ds_appraisal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="ds_appraisal" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="dbAppraisal">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="no" type="xs:string" minOccurs="0" />
+                            <xs:element name="jewel_weight" type="xs:string" minOccurs="0" />
+                            <xs:element name="jewel_description" type="xs:string" minOccurs="0" />
+                            <xs:element name="jewel_middlestone" type="xs:string" minOccurs="0" />
+                            <xs:element name="jewel_gold" type="xs:string" minOccurs="0" />
+                            <xs:element name="stonetype" type="xs:string" minOccurs="0" />
+                            <xs:element name="weight" type="xs:string" minOccurs="0" />
+                            <xs:element name="cut" type="xs:string" minOccurs="0" />
+                            <xs:element name="color" type="xs:string" minOccurs="0" />
+                            <xs:element name="clarity" type="xs:string" minOccurs="0" />
+                            <xs:element name="origin" type="xs:string" minOccurs="0" />
+                            <xs:element name="size" type="xs:string" minOccurs="0" />
+                            <xs:element name="value" type="xs:string" minOccurs="0" />
+                            <xs:element name="notes" type="xs:string" minOccurs="0" />
+                            <xs:element name="picture" type="xs:base64Binary" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="dbUserInfo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string" minOccurs="0" />
+                            <xs:element name="Address" type="xs:string" minOccurs="0" />
+                            <xs:element name="City" type="xs:string" minOccurs="0" />
+                            <xs:element name="State" type="xs:string" minOccurs="0" />
+                            <xs:element name="Country" type="xs:string" minOccurs="0" />
+                            <xs:element name="Phone" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

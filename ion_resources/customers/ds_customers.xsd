@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_customers" targetNamespace="http://tempuri.org/ds_customers.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_customers.xsd" xmlns:mstns="http://tempuri.org/ds_customers.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_customers" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="usr_CUSTOMERS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="email" type="xs:string" />
+							<xs:element name="password" type="xs:string" minOccurs="0" />
+							<xs:element name="firstname" type="xs:string" minOccurs="0" />
+							<xs:element name="lastname" type="xs:string" minOccurs="0" />
+							<xs:element name="street1" type="xs:string" minOccurs="0" />
+							<xs:element name="city1" type="xs:string" minOccurs="0" />
+							<xs:element name="state1_id" type="xs:int" />
+							<xs:element name="zip1" type="xs:string" minOccurs="0" />
+							<xs:element name="pobox1" type="xs:string" minOccurs="0" />
+							<xs:element name="country1_id" type="xs:int" />
+							<xs:element name="phone1" type="xs:string" minOccurs="0" />
+							<xs:element name="fax1" type="xs:string" minOccurs="0" />
+							<xs:element name="street2" type="xs:string" minOccurs="0" />
+							<xs:element name="city2" type="xs:string" minOccurs="0" />
+							<xs:element name="state2_id" type="xs:int" />
+							<xs:element name="zip2" type="xs:string" minOccurs="0" />
+							<xs:element name="pobox2" type="xs:string" minOccurs="0" />
+							<xs:element name="country2_id" type="xs:int" />
+							<xs:element name="phone2" type="xs:string" minOccurs="0" />
+							<xs:element name="fax2" type="xs:string" minOccurs="0" />
+							<xs:element name="inv_mail" type="xs:boolean" minOccurs="0" />
+							<xs:element name="inv_update" type="xs:boolean" minOccurs="0" />
+							<xs:element name="lastmodify_date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="lastmodify_user" type="xs:string" minOccurs="0" />
+							<xs:element name="lastmodify_user_id" type="xs:int" />
+							<xs:element name="create_date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="active" type="xs:boolean" minOccurs="0" />
+							<xs:element name="dealer" type="xs:boolean" minOccurs="0" />
+							<xs:element name="b_name" type="xs:string" minOccurs="0" />
+							<xs:element name="b_street" type="xs:string" minOccurs="0" />
+							<xs:element name="b_city" type="xs:string" minOccurs="0" />
+							<xs:element name="b_state_id" type="xs:int" />
+							<xs:element name="b_country_id" type="xs:int" />
+							<xs:element name="b_pobox" type="xs:string" minOccurs="0" />
+							<xs:element name="b_zip" type="xs:string" minOccurs="0" />
+							<xs:element name="b_phone" type="xs:string" minOccurs="0" />
+							<xs:element name="b_fax" type="xs:string" minOccurs="0" />
+							<xs:element name="b_tradingass" type="xs:string" minOccurs="0" />
+							<xs:element name="b_type_id" type="xs:int" />
+							<xs:element name="b_siteurl" type="xs:string" minOccurs="0" />
+							<xs:element name="b_specialization" type="xs:string" minOccurs="0" />
+							<xs:element name="historical_user" type="xs:boolean" minOccurs="0" />
+							<xs:element name="old_id" type="xs:int" minOccurs="0" />
+							<xs:element name="userdeleted" type="xs:boolean" minOccurs="0" />
+							<xs:element name="prf_srtkey_diamonds" type="xs:string" minOccurs="0" />
+							<xs:element name="prf_srtkey_gemstones" type="xs:string" minOccurs="0" />
+							<xs:element name="prf_srtkey_jewelry" type="xs:string" minOccurs="0" />
+							<xs:element name="prf_srtkey_newitems" type="xs:string" minOccurs="0" />
+							<xs:element name="prf_srtkey_specials" type="xs:string" minOccurs="0" />
+							<xs:element name="prf_srtkey_search" type="xs:string" minOccurs="0" />
+							<xs:element name="prf_list_amount" type="xs:int" minOccurs="0" />
+							<xs:element name="prf_language_id" type="xs:int" minOccurs="0" />
+							<xs:element name="prf_timesvisited" type="xs:int" minOccurs="0" />
+							<xs:element name="online_message" type="xs:string" minOccurs="0" />
+							<xs:element name="last_visit" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="dateofbirth" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="aid" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_customersKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:usr_CUSTOMERS" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

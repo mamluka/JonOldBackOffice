@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_cashflow" targetNamespace="http://tempuri.org/ds_cashflow.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_cashflow.xsd" xmlns:mstns="http://tempuri.org/ds_cashflow.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_cashflow" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="acc_CASHFLOW">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="payment_type" type="xs:int" />
+							<xs:element name="payment_date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="order_id" type="xs:int" />
+							<xs:element name="user_id" type="xs:int" />
+							<xs:element name="cc_type_id" type="xs:int" />
+							<xs:element name="cc_name" type="xs:string" minOccurs="0" />
+							<xs:element name="cc_number" type="xs:string" minOccurs="0" />
+							<xs:element name="cc_cvv" type="xs:string" minOccurs="0" />
+							<xs:element name="cc_exp_year" type="xs:string" minOccurs="0" />
+							<xs:element name="cc_exp_month" type="xs:string" minOccurs="0" />
+							<xs:element name="cc_user_ssn" type="xs:string" minOccurs="0" />
+							<xs:element name="cc_confirmation" type="xs:string" minOccurs="0" />
+							<xs:element name="cc_clubmember" type="xs:boolean" minOccurs="0" />
+							<xs:element name="cc_cleared" type="xs:boolean" minOccurs="0" />
+							<xs:element name="cc_batch" type="xs:string" minOccurs="0" />
+							<xs:element name="mt_bank" type="xs:string" minOccurs="0" />
+							<xs:element name="mt_name" type="xs:string" minOccurs="0" />
+							<xs:element name="mt_account" type="xs:string" minOccurs="0" />
+							<xs:element name="mt_code" type="xs:string" minOccurs="0" />
+							<xs:element name="cq_bank" type="xs:string" minOccurs="0" />
+							<xs:element name="cq_name" type="xs:string" minOccurs="0" />
+							<xs:element name="cq_account" type="xs:string" minOccurs="0" />
+							<xs:element name="cq_date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="master" type="xs:boolean" minOccurs="0" />
+							<xs:element name="received" type="xs:boolean" minOccurs="0" />
+							<xs:element name="received_date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="approved" type="xs:boolean" minOccurs="0" />
+							<xs:element name="approved_date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="amount_interest" type="xs:decimal" minOccurs="0" />
+							<xs:element name="amount_total" type="xs:decimal" minOccurs="0" />
+							<xs:element name="amount_actual" type="xs:decimal" minOccurs="0" />
+							<xs:element name="amount_costs" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LastModify_User" type="xs:string" minOccurs="0" />
+							<xs:element name="LastModify_User_Id" type="xs:int" minOccurs="0" />
+							<xs:element name="LastModify_Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="notes" type="xs:string" minOccurs="0" />
+							<xs:element name="paypal" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_cashflowKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:acc_CASHFLOW" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

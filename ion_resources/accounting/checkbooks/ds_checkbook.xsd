@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_checkbook" targetNamespace="http://tempuri.org/ds_checkbook.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_checkbook.xsd" xmlns:mstns="http://tempuri.org/ds_checkbook.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_checkbook" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="acc_CHECKBOOK_ILS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="description" type="xs:string" minOccurs="0" />
+							<xs:element name="paymentdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="checknumber" type="xs:int" minOccurs="0" />
+							<xs:element name="account" type="xs:int" />
+							<xs:element name="nameto" type="xs:string" minOccurs="0" />
+							<xs:element name="checkdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="chashed" type="xs:boolean" minOccurs="0" />
+							<xs:element name="amount" type="xs:decimal" minOccurs="0" />
+							<xs:element name="notes" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="acc_CHECKBOOK_USD">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="description" type="xs:string" minOccurs="0" />
+							<xs:element name="paymentdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="checknumber" type="xs:int" minOccurs="0" />
+							<xs:element name="account" type="xs:int" />
+							<xs:element name="nameto" type="xs:string" minOccurs="0" />
+							<xs:element name="checkdate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="chashed" type="xs:boolean" minOccurs="0" />
+							<xs:element name="amount" type="xs:decimal" minOccurs="0" />
+							<xs:element name="notes" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_checkbookKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:acc_CHECKBOOK_USD" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

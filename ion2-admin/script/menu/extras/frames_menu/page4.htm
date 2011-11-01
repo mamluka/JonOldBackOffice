@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Frames Test</title>
+
+<link rel="stylesheet" type="text/css" href="frames.css">
+
+<script type="text/javascript" src="../../milonic_src.js"></script>
+<script type="text/javascript">
+if(ns4)_d.write("<scr"+"ipt type=text/javascript src=../../mmenuns4.js><\/scr"+"ipt>");
+  else _d.write("<scr"+"ipt type=text/javascript src=../../mmenudom.js><\/scr"+"ipt>");
+</script>
+
+<script type="text/javascript" src="menu_data_body.js"></script>
+
+</head>
+
+<body>
+<h1>page4.htm in the "body" frame</h1>
+
+<p>
+This page has been loaded into the "body" frame.
+The submenus still work because the base Milonic .js files (milonic_src.js and mmenudom.js/mmenuns4.js)
+have been loaded into the page, along with menu_data_body.js, which contains the javascript code for the
+submenus. The code used to load the .js files into this pages is as follows:
+</p>
+
+<pre><code>
+&lt;script type="text/javascript" src="milonic_src.js">&lt;/script>
+&lt;script type="text/javascript">
+if(ns4)_d.write("&lt;scr"+"ipt type=text/javascript src=mmenuns4.js>&lt;\/scr"+"ipt>");
+  else _d.write("&lt;scr"+"ipt type=text/javascript src=mmenudom.js>&lt;\/scr"+"ipt>");
+&lt;/script>
+&lt;script type="text/javascript" src="menu_data_body.js">&lt;/script>
+</code></pre>
+
+<br>
+<p class="note">
+<b>Directory Paths.</b>  When loading the .js file, your would of course adjust the
+paths shown in the &lt;script&gt; tags above, to relect your own site's directory structure.
+</p>
+
+<div id="milonic" style="position: absolute; top: 400px; left: 10px">
+<a href=http://www.milonic.com/>JavaScript Menu Courtesy of Milonic.com</a>
+</div>
+
+		<script language="Javascript">
+
+		</script>
+		<script language="javascript1.1" src="http://www.twin-diamonds.com/indextools_ssl.js"></script>
+		<noscript>
+			<img src="http://stats.indextools.com/p.pl?a=10001017618097&amp;js=no" width="1" height="1"></noscript>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2363079-1";
+urchinTracker();
+</script>
+</body>
+</html>

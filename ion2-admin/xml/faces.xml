@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<faces>
+	<face plate="1">
+		<desc> |key::pair_of| |subplate._s_weight:::-|  Diamond   -  |key::diamond_color|/ |subplate._clarityfrom:::-|    </desc>
+		<infopart cat="Item Number:" empty="" type="1" helpid="1" >|_itemnumber|</infopart>
+		<infopart cat="Stone Type:" empty="-" type="1" helpid="12">|_category_name|</infopart>
+		<infopart cat="Quantity:" empty="1" type="1" helpid="12">|subplate._quantity|</infopart>
+		<infopart cat="Stone Cut:" empty="-" type="1" helpid="69">|subplate._shape|</infopart>
+		<infopart cat="Measurments::" empty="-" type="1" helpid="13">|subplate._s_measure|</infopart>
+		
+		<infopart cat="Weight:" empty="0.00" type="1" helpid="3" >|subplate._s_weight|</infopart>
+		<infopart cat="Color Grade:" empty="-" type="1" condition="HasFancyText|hide" helpid="4" >|subplate._colorfrom|</infopart>
+		<infopart cat="Up to:" empty="-" type="1" condition="HasFancyText|hide" >|subplate._colorto|</infopart>
+		<infopart cat="Color Grade:" empty="-" type="1" condition="HasFancyText|show"  helpid="4">|subplate.fancy_freetxt|</infopart>
+		<infopart cat="Clarity Grade:" empty="-" type="1" helpid="5">|subplate._clarityfrom|</infopart>
+		<infopart cat="Up to:" empty="-" type="1">|subplate._clarityto|</infopart>
+		<infopart cat="Report:" empty="-" type="1" helpid="25">|subplate._report|</infopart>
+		<infopart cat="Fluorescence:" empty="-" type="3" helpid="14">|subplate._fluorecence|</infopart>
+		<infopart cat="Depth:" empty="0.00 %" type="3" helpid="15">|subplate._s_depth|</infopart>
+		<infopart cat="Table:" empty="0.00 %" type="3">|subplate._s_tablewidth|</infopart>
+		<infopart cat="Girdle:" empty="-" type="3" helpid="20">|subplate._girdle|</infopart>
+		<infopart cat="Polish:" empty="-" type="3" helpid="22">|subplate._polish|</infopart>
+		<infopart cat="Symmetry:" empty="-" type="3" helpid="23">|subplate._symmetry|</infopart>
+		<infopart cat="Culet:" empty="-" type="3" helpid="24">|subplate._culet|</infopart>
+		<infopart cat="Note:" empty="" type="3">|_notes|</infopart>
+		<module name="relateditems"/>
+		<module name="packaging"/>
+		<menublocks>
+			<block id="popup_make_ring" type="literal"/>
+			<block id="popup_gemstones" type="literal"/>
+			<block type="plate" key="_category_name"/>
+			<block id="engagement" type="literal"/>
+			<block id="diamond-jewelry" type="literal"/>
+			<block id="gemstone-jewelry" type="literal"/>
+			<block id="settings" type="literal"/>
+<block id="services" type="literal"/>
+			
+	
+		</menublocks>
+		
+		
+		<path_bar>
+			<link text="Diamonds" link="/viewer/xmyview.aspx?genra=0"/>
+		</path_bar>
+		
+	</face>
+	<!-- idex shit -->
+	<face modid="6" >
+		<desc> |weight_formatted:::-|  Diamond   -  |color:::-|/|clarity:::-|  - |certificate:::-|   </desc>
+		<infopart cat="Item Number:" empty="-" type="1" helpid="1" >|itemid|</infopart>
+		<infopart cat="Stone Type:" empty="-" type="1" helpid="12">Diamond</infopart>
+		<infopart cat="Stone Cut:" empty="" type="1" helpid="69">|shape|</infopart>
+		<infopart cat="Weight:" empty="0.00" type="1" helpid="3">|weight_formatted|</infopart>
+		<infopart cat="Measurments:" empty="" type="1" helpid="13">|measurements|</infopart>
+		
+		<infopart cat="Color Grade:" empty="-" type="1"  helpid="4">|color|</infopart>
+		<infopart cat="Clarity Grade:" empty="-" type="1" helpid="5">|clarity|</infopart>
+		<infopart cat="Report:" empty="-" type="1" helpid="25">|certificate|</infopart>
+		
+		<infopart cat="Fluorescence:" empty="-" type="3" helpid="14">|fluorescence|</infopart>
+		<infopart cat="Depth:" empty="-" type="3" helpid="15">|total_depth|</infopart>
+		<infopart cat="Table:" empty="-" type="3">|table_width|</infopart>
+		<infopart cat="Girdle:" empty="-" type="3" helpid="20">|girdle|</infopart>
+		<infopart cat="Polish:" empty="-" type="3"  helpid="22">|polish|</infopart>
+		<infopart cat="Symmetry:" empty="-" type="3" helpid="23">|symmetry|</infopart>
+		<infopart cat="Culet:" empty="-" type="3" helpid="24">|culet|</infopart>
+		<module name="slimpackaging"/>
+		<menublocks>
+			<block id="popup_make_ring" type="literal"/>
+			<block id="popup_gemstones" type="literal"/>
+			<block id="popup_fancy" type="literal"/>
+			<block id="diamonds" type="literal"/>
+			<block id="engagement" type="literal"/>
+			<block id="diamond-jewelry" type="literal"/>
+			<block id="gemstone-jewelry" type="literal"/>
+			<block id="settings" type="literal"/>
+<block id="services" type="literal"/>
+			
+			
+		</menublocks>
+		
+		
+		<path_bar>
+			<link text="Diamonds" link="/viewer/xmyview.aspx?genra=0"/>
+		</path_bar>
+		
+	</face>
+	
+	<face plate="2">
+		<desc> |key::pair_of| |subplate._s_weight:::-|  |_category_name:::-|     </desc>
+		<infopart cat="Item Number:" empty="" type="1" helpid="1" >|_itemnumber|</infopart>
+		<infopart cat="Stone Type:" empty="-" type="1" helpid="12">|subplate._stonetype|</infopart>
+		<infopart cat="Quantity:" empty="1" type="1">|subplate._quantity|</infopart>
+		<infopart cat="Stone Cut:" empty="-" type="1" helpid="36">|subplate._shape|</infopart>
+		<infopart cat="Weight:" empty="0.00" type="1" helpid="3" >|subplate._s_weight|</infopart>
+		<infopart cat="Measurments:" empty="-" type="1" helpid="13">|subplate._measure_from|</infopart>
+		<infopart cat="to:" empty="-" type="1" helpid="13">|subplate._measure_to|</infopart>
+		
+		
+	
+		<infopart cat="Color  From:" condition="IsColorFrom|show" empty="-" type="1" helpid="18">|subplate._colorfrom|</infopart>
+		<infopart cat="Color Grade:" condition="IsColorFrom|hide" empty="-" type="1" helpid="18">|subplate._colorfrom|</infopart>
+		<infopart cat="To:" empty="-" type="1">|subplate._colorto|</infopart>
+		<infopart cat="Clarity  From :" condition="IsColorFrom|show"  empty="-" type="1" helpid="19">|subplate._clarityfrom|</infopart>
+		<infopart cat="Clarity Grade  :" condition="IsColorFrom|hide"  empty="-" type="1" helpid="19">|subplate._clarityfrom|</infopart>
+		<infopart cat="To:" empty="-" type="1">|subplate._clarityto|</infopart>
+		<infopart cat="Report:" empty="-" type="1" helpid="25">|subplate._report|</infopart>
+		<infopart cat="Origin:" empty="-" type="1" helpid="11">|subplate._origin|</infopart>
+		<infopart cat="General Grade:" empty="-" type="1" helpid="37">|subplate._grade|</infopart>
+		
+		
+		<infopart cat="Enhancement:" empty="-" type="3" helpid="38">|subplate._enhancement|</infopart>
+		<infopart cat="Luster:" empty="-" type="3" helpid="33">|subplate._luster|</infopart>
+		<infopart cat="Saturation:" empty="-" type="3" helpid="34">|subplate._saturation|</infopart>
+		<infopart cat="Brightness:" empty="-" type="3" helpid="35">|subplate._brightness|</infopart>
+		<infopart cat="Cut:" empty="-" type="3">|subplate._cut|</infopart>
+		<infopart cat="Note:" empty="" type="3">|_notes|</infopart>
+
+		<moreaction val="addtoring1" condition="IsSingleStone">Build your Solitaire Ring</moreaction>
+		<moreaction val="addtoring2" condition="IsSingleStone">Build your Multi stone Ring</moreaction>
+		<moreaction val="addtoring3" condition="IsSingleStone">Build your Three stone Ring</moreaction>
+		<moreaction val="addtoring4" condition="IsSingleStone">Add stone to Semi Mounting</moreaction>
+		
+		<module name="ind_report" />
+		<module name="relateditems"/>
+		<module name="packaging"/>
+		<menublocks>
+			<block id="popup_make_ring" type="literal"/>
+			<block id="popup_diamond" type="literal"/>
+			<block id="popup_gemstones" type="literal"/>
+			<block type="plate" key="subplate._stonetype"/>
+			<block id="gemstone-jewelry" type="literal"/>
+			<block id="engagement" type="literal"/>
+			<block id="diamond-jewelry" type="literal"/>
+
+			<block id="settings" type="literal"/>
+<block id="services" type="literal"/>
+			</menublocks>
+			
+		<path_bar>
+			<link text="Gemstones" link="/viewer/xmyview.aspx"/>
+		</path_bar>
+	</face>
+	<face plate="3">
+		<desc>|key::cs_stone_extended_flat| |subplate._jewelrytype:::-|  </desc>
+		<infopart cat="Item Number:" empty="" type="1" helpid="1" >|_itemnumber|</infopart>
+		<infopart cat="Size:" empty="0.00" type="1">|subplate._s_size|</infopart>
+		<infopart cat="Bend Info:" empty="0" type="1">|key::jewel_bend|</infopart>
+		<infopart cat="Material:" empty="-" type="1" condition="IsExtraMetal|hide">|subplate._metal|</infopart>
+		<infopart cat="Material:" empty="-" type="2" condition="IsExtraMetal|show" custom="extrametal"/>
+		<infopart cat="Weight:" empty="0.00 Gr." type="1" helpid="17">|subplate._s_weight|</infopart>
+		<infopart cat="Brand:" empty="-" type="1">|subplate._brand|</infopart>
+		
+	
+		<infopart cat="Report:" empty="-" type="1">|subplate._report|</infopart>
+		
+		<infopart cat="Setting:" empty="-" type="1">|subplate._setting|</infopart>
+		<infopart cat="Note:" empty="" type="3">|_notes|</infopart>
+		
+		
+		<mod name="earringsbacking"/>
+		<mod name="pendantchain"/>
+		<mod name="sizing"/>
+		<mod name="extrastone"/>
+		<mod name="stoneexchange"/>
+		<module  name="measurements"/>
+		<module name="video"/>
+		<module name="feedbacks"/>
+		<module name="stoneextended"/>
+		<module name="relateditems"/>
+		<module name="packaging"/>
+		<menublocks>
+			<block id="popup_make_ring" type="literal"/>
+			<block id="popup_diamond" type="literal"/>
+			<block id="popup_gemstones" type="literal"/>
+			<block type="plate" key="_subcategory_name"/>
+			
+		<!--	<block id="gemstone-jewelry" type="literal"/>-->
+			<block id="engagement" type="literal"/>
+	<!--		<block id="diamond-jewelry" type="literal"/>-->
+
+			<block id="settings" type="literal"/>
+<block id="services" type="literal"/>
+			</menublocks>
+			
+			
+		<path_bar>
+			<link text="Jewelry" link="/viewer/xmyview.aspx"/>
+		</path_bar>
+	</face>
+	<face plate="default">
+		<desc>|_category_name:::-|   </desc>
+		<infopart cat="item number:" empty="" type="1">|_itemnumber|</infopart>
+	</face>
+	<face modid="1">
+		<desc> |_category_name:::-|   </desc>
+		<infopart cat="item number:" empty="" type="1">|_itemnumber|</infopart>
+		<infopart cat="weight:" empty="0.00" type="1" jid="ss_weight">|subplate._s_weight|</infopart>
+		<infopart cat="quality:" empty="" type="1" jid="ss_quality">0</infopart>
+		<mod name="ss_select"/>
+		<moreaction val="addtoring">Add To Ring</moreaction>
+		<moreaction val="addtoring">Take Home</moreaction>
+		<moreaction val="addtoring">No Obligation</moreaction>
+		<moreaction val="addtoring">Add To Ring</moreaction>
+		<moreaction val="addtoring">Add To Ring</moreaction>
+	</face>
+	<face modid="2">
+		<desc> |subplate._s_weight:::-|  |_category_name:::-|     </desc>
+		<infopart cat="Item Number:" empty="" type="1" helpid="1">|_itemnumber|</infopart>
+		<infopart cat="Stone Type:" empty="" type="1">|subplate._stonetype|</infopart>
+		<infopart cat="Stone Cut:" empty="" type="1">|subplate._shape|</infopart>
+		<infopart cat="Measurments:" empty="" type="1">|subplate._measure_from|</infopart>
+		<infopart cat="Weight:" empty="" type="1">|subplate._s_weight|</infopart>
+		<infopart cat="Origin:" empty="" type="1">|subplate._origin|</infopart>
+		<infopart cat="General Grade:" empty="-" type="1">|subplate._grade|</infopart>
+		<infopart cat="Report:" empty="-" type="1">|subplate._report|</infopart>
+		
+		<infopart cat="Color Grade From:" condition="IsColorFrom|show" empty="-" type="1" helpid="18">|subplate._colorfrom|</infopart>
+		<infopart cat="Color Grade:" condition="IsColorFrom|hide" empty="-" type="1" helpid="18">|subplate._colorfrom|</infopart>
+		<infopart cat="Up To:" empty="-" type="1">|subplate._colorto|</infopart>
+		<infopart cat="Clarity Grade From :" condition="IsColorFrom|show"  empty="-" type="3" helpid="19">|subplate._clarityfrom|</infopart>
+		<infopart cat="Clarity Grade  :" condition="IsColorFrom|hide"  empty="-" type="3" helpid="19">|subplate._clarityfrom|</infopart>
+		<infopart cat="Clarity Grade To:" empty="-" type="3">|subplate._clarityto|</infopart>
+		
+		<infopart cat="Enhancement:" empty="-" type="3">|subplate._enhancement|</infopart>
+		
+		<infopart cat="Luster:" empty="-" type="3">|subplate._luster|</infopart>
+		<infopart cat="Saturation:" empty="-" type="3">|subplate._saturation|</infopart>
+		<infopart cat="Brightness:" empty="-" type="3">|subplate._brightness|</infopart>
+		<infopart cat="Cut:" empty="-" type="3">|subplate._cut|</infopart>
+	</face>
+	<face modid="3">
+		<desc> |_category_name:::-| |_itemnumber:::-|  </desc>
+		<infopart cat="Item number:" empty="" type="1">|_itemnumber|</infopart>
+		<infopart cat="Earrings Type:" empty="" type="1">|subplate._jewelrysubtype|</infopart>
+		<infopart cat="Material:" empty="-" type="2" condition="IsStandartExtraMetal|show" custom="extrametal"/>
+		<infopart cat="Setting:" empty="-" type="1">|subplate._setting|</infopart>
+		
+		<mod name="earringsbacking"/>
+		<mod name="stonestrip"/>
+		<mod name="stonereg"/>
+		<module name="video"/>
+		<module name="relateditems"/>
+		<module name="packaging"/>
+		<menublocks>
+			
+			<block id="popup_diamond" type="literal"/>
+			<block id="popup_gemstones" type="literal"/>
+			<block id="jewelry-earrings" type="literal"/>
+			<block id="engagement" type="literal"/>
+			<block id="diamond-jewelry" type="literal"/>
+			<block id="gemstone-jewelry" type="literal"/>
+			<block id="settings" type="literal"/>
+<block id="services" type="literal"/>
+		</menublocks>
+	</face>
+	
+	<face modid="5">
+		<desc> |_category_name:::-| |_itemnumber:::-|  </desc>
+		<infopart cat="Item number:" empty="" type="1" helpid="1"  >|_itemnumber|</infopart>
+		<infopart cat="Pendant Type:" empty="" type="1">|subplate._jewelrysubtype|</infopart>
+		<infopart cat="Material:" empty="-" type="2" condition="IsStandartExtraMetal|show" custom="extrametal"/>
+		<infopart cat="Material:" empty="-" type="1" condition="IsStandartExtraMetal|hide">|subplate._metal|</infopart>
+		<infopart cat="Setting:" empty="-" type="1">|subplate._setting|</infopart>
+		
+		<module  name="measurements"/>
+		<module name="video"/>
+		<mod name="pendantchain"/>
+		
+		<mod name="stonestrip"/>
+		<mod name="stonereg"/>
+		<module name="relateditems"/>
+		<module name="packaging"/>
+		
+		
+		<menublocks>
+			
+			<block id="popup_diamond" type="literal"/>
+			<block id="popup_gemstones" type="literal"/>
+			<block id="jewelry-pendants" type="literal"/>
+			<block id="gemstone-jewelry" type="literal"/>
+			<block id="engagement" type="literal"/>
+			<block id="diamond-jewelry" type="literal"/>
+			<block id="settings" type="literal"/>
+			<block id="services" type="literal"/>
+			
+		</menublocks>
+	</face>
+	
+	
+	
+	<face modid="4">
+		<desc>insidemode</desc>
+		<infopart cat="Item number:" empty="" type="1" helpid="1"  >|_itemnumber|</infopart>
+		<infopart cat="Stone Type:" empty="" type="1">|subplate._stonetype|</infopart>
+		<infopart cat="Diamond Cut:" empty="" type="1">|subplate._shape|</infopart>
+		<infopart cat="Weight:" empty="" type="1" jid="ss_weight" helpid="3">2</infopart>
+		<infopart cat="Quantity:" empty="" type="1">2</infopart>
+		
+		<infopart cat="Quality:" empty="" type="1">E-F/VS</infopart>
+		
+
+		
+		<mod name="stonestrip"/>
+		<module name="relateditems"/>
+		<module name="packaging"/>
+		
+		<menublocks>
+			<block id="popup_diamond" type="literal"/>
+			<block id="popup_gemstones" type="literal"/>
+			<block id="jewel-design" type="literal"/>
+			<block id="engagement" type="literal"/>
+			<block id="diamond-jewelry" type="literal"/>
+			<block id="gemstone-jewelry" type="literal"/>
+			<block id="settings" type="literal"/>
+<block id="services" type="literal"/>
+		</menublocks>
+		
+	</face>
+	
+</faces>

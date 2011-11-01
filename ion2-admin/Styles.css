@@ -1,0 +1,155 @@
+/* Default CSS Stylesheet for a new Web Application project */
+
+.formbutton_link
+{
+	border-right: 1px ridge;
+	border-top: 1px ridge;
+	font-size: 7pt;
+	padding-bottom: 1px;
+	border-left: 1px ridge;
+	color: midnightblue;
+	border-bottom: 1px ridge;
+	font-style: normal;
+	font-family: Verdana, Arial;
+	background-color: gainsboro;
+	text-decoration: none;
+}
+
+.formbutton_link:HOVER
+{
+	border-right: 1px ridge;
+	border-top: 1px ridge;
+	font-weight: bold;
+	font-size: 7pt;
+	padding-bottom: 1px;
+	border-left: 1px ridge;
+	color: midnightblue;
+	border-bottom: 1px ridge;
+	font-style: normal;
+	font-family: Verdana, Arial;
+	background-color: gainsboro;
+	text-decoration: none;
+}
+
+.formfield
+{
+	border-right: 1px groove;
+	border-top: 1px groove;
+	font-size: 8pt;
+	border-left: 1px groove;
+	color: midnightblue;
+	border-bottom: 1px groove;
+	font-family: Verdana, Arial;
+	background-color: ghostwhite;
+}
+
+.formcheckbox
+{
+	font-size: 8pt;
+	color: midnightblue;
+	font-family: Verdana, Arial;
+	background-color: gainsboro;
+}
+
+.formfield_dec
+{
+	border-right: 1px groove;
+	border-top: 1px groove;
+	font-size: 8pt;
+	border-left: 1px groove;
+	color: midnightblue;
+	border-bottom: 1px groove;
+	font-family: Verdana, Arial;
+	background-color: ghostwhite;
+	text-align: right;
+}
+
+.formfield_disabled
+{
+	border-right: 1px outset;
+	border-top: 1px outset;
+	font-size: 8pt;
+	border-left: 1px outset;
+	color: midnightblue;
+	border-bottom: 1px outset;
+	font-style: normal;
+	font-family: Verdana, Arial;
+	background-color: oldlace;
+}
+
+.formbutton
+{
+	border-right: 1px ridge;
+	border-top: 1px ridge;
+	font-size: 8pt;
+	border-left: 1px ridge;
+	color: midnightblue;
+	border-bottom: 1px ridge;
+	font-style: normal;
+	font-family: Verdana, Arial;
+	background-color: gainsboro;
+}
+
+.formbutton:HOVER
+{
+	border-right: 1px ridge;
+	border-top: 1px ridge;
+	font-weight: bold;
+	font-size: 8pt;
+	border-left: 1px ridge;
+	color: midnightblue;
+	border-bottom: 1px ridge;
+	font-style: normal;
+	font-family: Verdana, Arial;
+	background-color: linen;
+}
+
+.formframe
+{
+	border-right: 1px inset;
+	border-top: 1px inset;
+	border-left: 1px inset;
+	border-bottom: 1px inset;
+	background-color: gainsboro;
+}
+
+.MessagePanel
+{
+	border-right: 1px groove;
+	border-top: 1px groove;
+	left: 100px;
+	border-left: 1px groove;
+	color: midnightblue;
+	border-bottom: 1px groove;
+	position: relative;
+	background-color: linen;
+}
+.menulabel
+{
+	border-right: 1px outset;
+	border-top: 1px outset;
+	font-size: 9pt;
+	border-left: 1px outset;
+	width: 120px;
+	color: linen;
+	border-bottom: 1px outset;
+	font-family: verdana,arial;
+	height: 17px;
+	background-color: darkslateblue;
+}
+
+.menubutton
+{
+	border-right: 1px inset;
+	border-top: 1px inset;
+	font-size: 8pt;
+	border-left: 1px inset;
+	width: 120px;
+	color: midnightblue;
+	border-bottom: 1px inset;
+	font-family: verdana,arial;
+	height: 17px;
+	background-color: activeborder;
+}
+
+

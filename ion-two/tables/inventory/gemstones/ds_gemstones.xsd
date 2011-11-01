@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_gemstones" targetNamespace="http://tempuri.org/ds_gemstones.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_gemstones.xsd" xmlns:mstns="http://tempuri.org/ds_gemstones.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_gemstones" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="inv_GEMSTONES">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="INVENTORY_ID" type="xs:int" />
+							<xs:element name="WEIGHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="QUANTITY" type="xs:int" minOccurs="0" />
+							<xs:element name="MEASURE1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE1TO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE2TO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE3TO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="STONETYPE_ID" type="xs:int" />
+							<xs:element name="ORIGIN_ID" type="xs:int" />
+							<xs:element name="SHAPE_ID" type="xs:int" />
+							<xs:element name="COLOR_ID" type="xs:int" />
+							<xs:element name="COLORTYPE_ID" type="xs:int" />
+							<xs:element name="CLARITY_ID" type="xs:int" />
+							<xs:element name="CLARITYTYPE_ID" type="xs:int" />
+							<xs:element name="COLORTO_ID" type="xs:int" />
+							<xs:element name="COLORTYPETO_ID" type="xs:int" />
+							<xs:element name="CLARITYTO_ID" type="xs:int" />
+							<xs:element name="CLARITYTYPETO_ID" type="xs:int" />
+							<xs:element name="GRADE_ID" type="xs:int" />
+							<xs:element name="BRIGHTNESS_ID" type="xs:int" />
+							<xs:element name="LUSTER_ID" type="xs:int" />
+							<xs:element name="SATURATION_ID" type="xs:int" />
+							<xs:element name="ENHANCEMENT_ID" type="xs:int" />
+							<xs:element name="CUT_ID" type="xs:int" />
+							<xs:element name="REPORT_ID" type="xs:int" />
+							<xs:element name="FREECOLOR" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_gemstonesKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:inv_GEMSTONES" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

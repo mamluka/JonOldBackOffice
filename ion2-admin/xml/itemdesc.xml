@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<desc>
+    <desccode id="plate1" type="viewer"><![CDATA[<strong> |subplate._s_weight:::0.00|</strong>-NL-|subplate._stonetype:::-|-NL-|subplate._shape:::-|-NL-<strong>|key::diamond_color|  |subplate._clarityfrom:::-|</strong>-NL-|subplate._report:::-| ]]></desccode>
+<desccode id="plate2" type="viewer"><![CDATA[ <strong> |subplate._s_weight:::0.00|</strong>-NL- |subplate._stonetype:::-| -NL-<strong>|subplate._report:::-|</strong>-NL-|subplate._shape:::-|]]></desccode>
+<desccode id="plate3" type="viewer"><![CDATA[|subplate._jewelrysubtype:::-| |subplate._jewelrytype:::-| |subplate._metal:::-l| with -NL- |key::cs_stone_extended[exclude::None[infodelim::<br>|]]></desccode>
+
+<desccode id="plate1" type="catalog">|subplate._shape:::-|</desccode>
+<desccode id="plate2" type="catalog">|subplate._stonetype:::-|, |subplate._s_weight:::0.00|-NL- |subplate._origin:::-|-NL-|subplate._shape:::-|</desccode>
+<desccode id="plate3" type="catalog"><![CDATA[|subplate._jewelrysubtype:::-| |subplate._jewelrytype:::-| |subplate._metal:::-l| with -NL- |key::full_stone_extended[exclude::None[infodelim::<br>|]]></desccode>
+    <desccode id="plate2" type="stoneexchange"><![CDATA[ <strong> |subplate._s_weight:::0.00|</strong>-NL- |subplate._stonetype:::-| -NL-<strong>|subplate._report:::-|</strong>-NL-|subplate._shape:::-|]]></desccode>
+    
+    <desccode id="plate3" type="stoneexchange"><![CDATA[|subplate._jewelrysubtype:::-| |subplate._jewelrytype:::-| |subplate._metal:::-l| -NL-|key::stoneexchange[exclude::None[infodelim::<br>|]]></desccode>
+    <desccode id="plate3" type="readytitle"><![CDATA[|subplate.jewel_title:::-|]]></desccode>
+    
+</desc>
+
+

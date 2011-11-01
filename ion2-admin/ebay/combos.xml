@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<combos>
+
+    
+    <combo id="auction_type">
+        <item val="1">Auction</item>
+        <item val="2" default="true" >Store Item</item>
+		  <item val="3" >Fixed Price</item>
+    </combo>
+    
+    <combo id="duration">
+        <item val="Days_3">3 Days</item>
+         <item val="Days_5">5 Days</item>
+        <item val="Days_7">7 Days</item>
+        <item val="Days_10">10 Days</item>
+        <item val="Days_30">30 Days</item>
+        <item val="GTC" default="true" >GTC</item>
+    </combo>
+    
+    <combo id="shipping">
+        <item val="0">Free FedEx Shipping</item>
+        <item val="1" default="true" >5.5$ Shipping</item>
+        <item val="2">14.5$ Shipping FedEx</item>
+    
+        <item val="3">39$ Shipping</item>
+        <item val="4">39$ Shipping FedEx</item>
+    </combo>
+    
+    
+</combos>

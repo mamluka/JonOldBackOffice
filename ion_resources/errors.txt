@@ -1,0 +1,22 @@
+5000 - 6000
+
+Err.Raise(5000, "[test]", "ERROR 5000: Testing error handling! ")
+Err.Raise(5001, "[cls_ion_functions]", "ERROR 5001: Wrong plate number passed in module: <resolve_plate>")
+Err.Raise(5002, "[cls_ion_plate_brk]", "ERROR 5002: To many or to few Records assigned to dataset [MP]: <save_plate>")
+Err.Raise(5003, "[cls_ion_plate_brk]", "ERROR 5003: To many or to few Records assigned to dataset [SP]: <save_plate>")
+Err.Raise(5004, "[cls_ion_plate_brk]", "ERROR 5004: ItemId does not exist: <GetItemPlate>")
+Err.Raise(5005, "[cls_ion_plate_brk]", "ERROR 5005: Error generating ItemNumber [MP]: <save_plate>")
+Err.Raise(5006, "[cls_itemnumber.get_itemnumber]", "ERROR 5006: Invalid Itemnumber")
+Err.Raise(5007, "[cls_itemnumber.get_suppliernumber]", "ERROR 5007: Invalid Itemnumber")
+Err.Raise(5008, "[cls_itemnumber.get_branchnumber]", "ERROR 5008: Invalid Itemnumber")
+Err.Raise(5009, "[cls_ion_customer_brk]", "ERROR 5009: To many or to few Records assigned to dataset [CUST]: <insert_plate>")
+Err.Raise(5010, "[cls_ion_customer_brk]", "ERROR 5010: To many or to few Records assigned to dataset [CUST]: <update_plate>")
+Err.Raise(5011, "[cls_order_brk]", "ERROR 501: To many or to few Records assigned to dataset [ORDER]: <insert_order>")
+Err.Raise(5012, "[cls_order_brk]", "ERROR 5012: To many or to few Records assigned to dataset [ORDER_ITEMS]: <insert_order>")
+Err.Raise(5013, "[cls_transactor]", "ERROR 5013: To many or to few Records assigned to dataset [" + cTableName + "] <transactor>")
+Err.Raise(5014, "[cls_ion_plate_brk]", "ERROR 5014: Cannot generate LastItemNumber for this supplier: <save_plate>")
+Err.Raise(5015, "[cls_status-set_status]", "ERROR 5015: Transaction was already preformed! ")
+
+
+
+

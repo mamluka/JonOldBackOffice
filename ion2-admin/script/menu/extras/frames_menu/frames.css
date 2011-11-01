@@ -1,0 +1,87 @@
+body {
+  padding: 0;
+  background-color:#ffffff;
+  font-family: Verdana, Tahoma, Arial;
+  font-size: 12px
+}
+
+a:link {
+  color: #FFCC99;
+  text-decoration:underline;
+  font-weight:bold
+}
+
+a:hover {
+  background-color:#f1f8f3;
+  text-decoration: underline
+}
+
+a:active {
+  color: #ffffff
+}
+
+a:visited {
+  color: #ead38e;
+  text-decoration: underline
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #016701;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #016701;
+}
+
+p.note {
+	font-size: 8pt;
+	border-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #808080;
+	border-bottom-color: #808080;
+	border-left-color: #FFFFFF;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	background-color: #FFFFD7;
+}
+
+pre {
+  margin-left: 20px;
+}
+
+code {
+  font-family: Courier, 'Courier New', sans-serif;
+  color: #006600;
+}
+
+span.var {
+  color: #000090;
+}
+
+span.file {
+  font-family: Times New Roman, Verdana, Tahoma, Arial;
+  font-size: 14px;
+}
+
+span.listh {
+  font-family: Verdana, Tahoma, Arial;
+  font-weight: 600;
+  color: #016701;
+}
+
+span.emph {
+  font-style: italic;
+  font-weight: bold;
+}
+

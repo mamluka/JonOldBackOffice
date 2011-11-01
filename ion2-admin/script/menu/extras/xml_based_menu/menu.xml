@@ -1,0 +1,92 @@
+<milonic product="menu" menuCloseDelay="500" menuOpenDelay="150" subOffsetTop="0" subOffsetLeft="0">
+
+	<style name="vertStyle">
+		<onbgcolor>#4F8EB6</onbgcolor>
+		<oncolor>#ffffff</oncolor>
+		<offbgcolor>#ffffff</offbgcolor>
+		<offcolor>#000000</offcolor>
+		<visitedcolor>green</visitedcolor>
+		<bordercolor>#999999</bordercolor>
+		<borderstyle>solid</borderstyle>
+		<separatorcolor>#dddddd</separatorcolor>
+		<separatorsize>1</separatorsize>
+		<separatorpadding>1</separatorpadding>
+		<padding>4</padding>
+		<borderwidth>1</borderwidth>
+		<onborder>1px solid #000000</onborder>
+		<overfilter>Fade(duration=0.2);Alpha(opacity=95);Shadow(color='#777777', Direction=135, Strength=3)</overfilter>
+		<outfilter>randomdissolve(duration=0.4)</outfilter>
+		<fontsize>75%</fontsize>
+		<fontstyle>normal</fontstyle>
+		<fontfamily>arial, verdana, tahoma</fontfamily>
+		<pagebgcolor>#ECF4F9</pagebgcolor>
+		<pageimage>db_red.gif</pageimage>
+		<pagecolor>#000000</pagecolor>
+		<subimage>black_13x13_greyboxed.gif</subimage>
+		<onsubimage>on_13x13_greyboxed.gif</onsubimage>
+		<headercolor>#000000</headercolor>
+		<headerbgcolor>#C1D7E4</headerbgcolor>
+		<headerborder>1px solid #000000</headerborder>
+	</style>
+
+	
+	<menu name="Main Menu">
+		
+		<top>81</top>            
+		<left>150</left>			
+		<alwaysvisible>1</alwaysvisible>
+
+		<style>vertStyle</style>
+		<orientation>horizontal</orientation>
+		
+		<menuitem>
+			<text>MILONIC</text>
+			<url>http://www.milonic.com</url>
+		</menuitem>
+		
+		<menuitem>
+			<text>Sample Menus</text>
+			<showmenu>Menu Samples</showmenu>
+		</menuitem>
+		
+		<menuitem>
+			<text>About Milonic</text>
+			<showmenu>About Milonic</showmenu>
+		</menuitem>
+		
+		<menuitem>
+			<text>Partners</text>
+			<showmenu>Partners</showmenu>
+		</menuitem>
+		
+		<menuitem>
+			<text>Links</text>
+			<showmenu>Links</showmenu>
+		</menuitem>
+		
+	</menu>
+
+
+
+	<menu name="About Milonic">
+		<style>vertStyle</style>
+		
+		<menuitem>
+			<text>Milonic.com</text>
+			<url>http://www.milonic.com</url>
+		</menuitem>
+		
+		<menuitem>
+			<text>Milonic Forum</text>
+			<url>http://www.milonic.com/forum/</url>
+		</menuitem>
+
+		<menuitem>
+			<text>Download XML Menu</text>
+			<url>http://www.milonic.com/xml_menu.zip</url>
+		</menuitem>
+		
+	</menu>
+
+
+</milonic>

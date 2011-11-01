@@ -1,0 +1,8 @@
+IDAC Errors run from 9000
+
+9000, "cls_sql_read:transact_read", "iDAC: More then one record fetched"
+9001, "cls_sql_datadeader:read", "iDAC: _Table not provided"
+9002, "cls_sql_datadeader:read", "iDAC: Property _Fields not provided"
+9003, "cls_sql_dalete:transact_delete", "iDAC: Property _DataTable not provided"
+9004, "cls_T_datareader", "iDAC: No connection string found"
+9005, "cls_T_datareader", "iDAC: No dbtype found"

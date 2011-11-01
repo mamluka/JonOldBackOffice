@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_diamonds" targetNamespace="http://tempuri.org/ds_diamonds.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_diamonds.xsd" xmlns:mstns="http://tempuri.org/ds_diamonds.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_diamonds" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="inv_DIAMONDS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="INVENTORY_ID" type="xs:int" />
+							<xs:element name="WEIGHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="QUANTITY" type="xs:int" minOccurs="0" />
+							<xs:element name="MEASURE1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE1TO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE2TO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MEASURE3TO" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DEPTH" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TABLEWIDTH" type="xs:decimal" minOccurs="0" />
+							<xs:element name="STONETYPE_ID" type="xs:int" />
+							<xs:element name="COLOR_ID" type="xs:int" />
+							<xs:element name="CLARITY_ID" type="xs:int" />
+							<xs:element name="COLORTO_ID" type="xs:int" />
+							<xs:element name="CLARITYTO_ID" type="xs:int" />
+							<xs:element name="SHAPE_ID" type="xs:int" />
+							<xs:element name="POLISH_ID" type="xs:int" />
+							<xs:element name="SYMMETRY_ID" type="xs:int" />
+							<xs:element name="FLUORECENCE_ID" type="xs:int" />
+							<xs:element name="GIRDLE_ID" type="xs:int" />
+							<xs:element name="CULET_ID" type="xs:int" />
+							<xs:element name="REPORT_ID" type="xs:int" />
+							<xs:element name="fancy_freetxt" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_diamondsKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:inv_DIAMONDS" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

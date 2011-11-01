@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_log_ERRORLOG" targetNamespace="http://tempuri.org/ds_log_ERRORLOG.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_log_ERRORLOG.xsd" xmlns:mstns="http://tempuri.org/ds_log_ERRORLOG.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_log_ERRORLOG" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="log_ERRORLOG_Back">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="date_time" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="session_id" type="xs:string" minOccurs="0" />
+							<xs:element name="user_name" type="xs:string" minOccurs="0" />
+							<xs:element name="user_id" type="xs:int" minOccurs="0" />
+							<xs:element name="error_no" type="xs:int" minOccurs="0" />
+							<xs:element name="error_description" type="xs:string" minOccurs="0" />
+							<xs:element name="error_source" type="xs:string" minOccurs="0" />
+							<xs:element name="app_module" type="xs:string" minOccurs="0" />
+							<xs:element name="app_call" type="xs:string" minOccurs="0" />
+							<xs:element name="app_function" type="xs:string" minOccurs="0" />
+							<xs:element name="note" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="log_ERRORLOG_Site">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="date_time" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="session_id" type="xs:string" minOccurs="0" />
+							<xs:element name="user_name" type="xs:string" minOccurs="0" />
+							<xs:element name="user_id" type="xs:int" minOccurs="0" />
+							<xs:element name="error_no" type="xs:int" minOccurs="0" />
+							<xs:element name="error_description" type="xs:string" minOccurs="0" />
+							<xs:element name="error_source" type="xs:string" minOccurs="0" />
+							<xs:element name="app_module" type="xs:string" minOccurs="0" />
+							<xs:element name="app_call" type="xs:string" minOccurs="0" />
+							<xs:element name="app_function" type="xs:string" minOccurs="0" />
+							<xs:element name="note" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_log_ERRORLOGKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:log_ERRORLOG_Site" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

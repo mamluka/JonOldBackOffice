@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<todolist_root>
+    <row>
+        <cell type="text"  key="email" text="Email" />
+        <cell type="text"  key="email" text="Payment" />
+		
+		 
+    </row>
+    <row>
+        <cell type="key"  key="email" />
+        <cell type="key"  key="payment"  />
+		 
+    </row>
+	
+	<row>
+	<cell type="text"  key="email" text="Currency" />
+	<cell type="text"  key="email" text="Currency Rate" />
+	
+	</row>
+    
+	<row>
+	<cell type="key"  key="order_currency"  />
+		 <cell type="key"  key="order_currency_rate"  />
+	</row>
+    <row>
+        <cell type="check" text="Lab" underscore="20"/>
+        <cell type="check" text="Report" underscore="20"/>
+    </row>
+    <row>
+        <cell type="check" text="Goldshmit" underscore="20"/>
+        <cell type="check" text="Setter" underscore="20"/>
+    </row>
+</todolist_root>

@@ -1,0 +1,1248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8159058C-43DF-43A1-BD71-4A11396BC713}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>ion-admin</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>ion_admin</RootNamespace>
+    <StartupObject>ion_admin.%28None%29</StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ion-admin.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ion-admin.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iDAC\v3\iDac.vbproj">
+      <Name>iDac</Name>
+      <Project>{5E2F0518-8FD0-43E9-8459-A6DC5358F691}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\iFoundation\v3\iFoundation.vbproj">
+      <Name>iFoundation</Name>
+      <Project>{DA8EA39F-B6E5-4767-A311-666E14467F51}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\iFunctions\v3\iFunctions.vbproj">
+      <Name>iFunctions</Name>
+      <Project>{71B53278-AE23-4F49-ACB7-6A07ED69021C}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\iLogging\v3\iLogging.vbproj">
+      <Name>iLogging</Name>
+      <Project>{6FA6098C-C87C-421A-BD81-A2FF5B0307A1}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\development-net\ION-parts\ion-idac\ion-idac.vbproj">
+      <Name>ion-idac</Name>
+      <Project>{D5D6FF19-6311-4451-BDCE-98B610E16408}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ion-two\ion-two.vbproj">
+      <Project>{C0BDA706-F613-460E-9152-D0E623D464CA}</Project>
+      <Name>ion-two</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ion_resources\ion_resources.vbproj">
+      <Name>ion_resources</Name>
+      <Project>{2C6BC527-5C58-421C-B6C8-A1B3909B74D8}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="eBay.Service">
+      <Name>eBay.Service</Name>
+      <HintPath>bin\eBay.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="eBayPictureService">
+      <Name>eBayPictureService</Name>
+      <HintPath>bin\eBayPictureService.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accounting\accountstatus.aspx.designer.vb">
+      <DependentUpon>accountstatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\accountstatus.aspx.vb">
+      <DependentUpon>accountstatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accounting\checkbooks\checkbook.aspx.designer.vb">
+      <DependentUpon>checkbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\checkbooks\checkbook.aspx.vb">
+      <DependentUpon>checkbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accounting\checkbooks\editcheckbook.aspx.designer.vb">
+      <DependentUpon>editcheckbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\checkbooks\editcheckbook.aspx.vb">
+      <DependentUpon>editcheckbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accounting\checkbooks\listcheckbooks.aspx.designer.vb">
+      <DependentUpon>listcheckbooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\checkbooks\listcheckbooks.aspx.vb">
+      <DependentUpon>listcheckbooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accounting\currency_rates.aspx.designer.vb">
+      <DependentUpon>currency_rates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\currency_rates.aspx.vb">
+      <DependentUpon>currency_rates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accounting\list-cashflow.aspx.designer.vb">
+      <DependentUpon>list-cashflow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\list-cashflow.aspx.vb">
+      <DependentUpon>list-cashflow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accounting\listaccounts.aspx.designer.vb">
+      <DependentUpon>listaccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\listaccounts.aspx.vb">
+      <DependentUpon>listaccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accounting\receive-payment.aspx.designer.vb">
+      <DependentUpon>receive-payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\receive-payment.aspx.vb">
+      <DependentUpon>receive-payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\ajax_db.aspx.designer.vb">
+      <DependentUpon>ajax_db.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\ajax_db.aspx.vb">
+      <DependentUpon>ajax_db.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\inventory_ajax.aspx.designer.vb">
+      <DependentUpon>inventory_ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\inventory_ajax.aspx.vb">
+      <DependentUpon>inventory_ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\orders_ajax.aspx.designer.vb">
+      <DependentUpon>orders_ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\orders_ajax.aspx.vb">
+      <DependentUpon>orders_ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apperror.aspx.designer.vb">
+      <DependentUpon>apperror.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apperror.aspx.vb">
+      <DependentUpon>apperror.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspxerror.aspx.designer.vb">
+      <DependentUpon>aspxerror.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspxerror.aspx.vb">
+      <DependentUpon>aspxerror.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="calendar.aspx.designer.vb">
+      <DependentUpon>calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="calendar.aspx.vb">
+      <DependentUpon>calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="components\cls_combo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="components\cls_config.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="components\cls_datareader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="components\cls_defaults.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="components\cls_error.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="components\cls_garbage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="components\cls_message.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="customers\addcustomer.aspx.designer.vb">
+      <DependentUpon>addcustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customers\addcustomer.aspx.vb">
+      <DependentUpon>addcustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers\editcustomer.aspx.designer.vb">
+      <DependentUpon>editcustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customers\editcustomer.aspx.vb">
+      <DependentUpon>editcustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers\listcustomers.aspx.designer.vb">
+      <DependentUpon>listcustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customers\listcustomers.aspx.vb">
+      <DependentUpon>listcustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers\wc_customer.ascx.designer.vb">
+      <DependentUpon>wc_customer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="customers\wc_customer.ascx.vb">
+      <DependentUpon>wc_customer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ebay\controls\csvstrip.ascx.designer.vb">
+      <DependentUpon>csvstrip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ebay\controls\csvstrip.ascx.vb">
+      <DependentUpon>csvstrip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ebay\ebaycsv.aspx.designer.vb">
+      <DependentUpon>ebaycsv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ebay\ebaycsv.aspx.vb">
+      <DependentUpon>ebaycsv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ebay\ebaycsv_au.aspx.designer.vb">
+      <DependentUpon>ebaycsv_au.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ebay\ebaycsv_au.aspx.vb">
+      <DependentUpon>ebaycsv_au.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ebay\ebaycsv_fr.aspx.designer.vb">
+      <DependentUpon>ebaycsv_fr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ebay\ebaycsv_fr.aspx.vb">
+      <DependentUpon>ebaycsv_fr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ebay\ebayoffice.aspx.designer.vb">
+      <DependentUpon>ebayoffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ebay\ebayoffice.aspx.vb">
+      <DependentUpon>ebayoffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ebay\htmlpreset.aspx.designer.vb">
+      <DependentUpon>htmlpreset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ebay\htmlpreset.aspx.vb">
+      <DependentUpon>htmlpreset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ebay\syncitems.aspx.designer.vb">
+      <DependentUpon>syncitems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ebay\syncitems.aspx.vb">
+      <DependentUpon>syncitems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ebay\test.aspx.designer.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ebay\test.aspx.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ebay\twinlister.aspx.designer.vb">
+      <DependentUpon>twinlister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ebay\twinlister.aspx.vb">
+      <DependentUpon>twinlister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="functions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generate_td-htm.aspx.designer.vb">
+      <DependentUpon>generate_td-htm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generate_td-htm.aspx.vb">
+      <DependentUpon>generate_td-htm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="help\addhelp.aspx.designer.vb">
+      <DependentUpon>addhelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="help\addhelp.aspx.vb">
+      <DependentUpon>addhelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help\help.aspx.designer.vb">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="help\help.aspx.vb">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help\help_script.ascx.designer.vb">
+      <DependentUpon>help_script.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="help\help_script.ascx.vb">
+      <DependentUpon>help_script.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help\listhelp.aspx.designer.vb">
+      <DependentUpon>listhelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="help\listhelp.aspx.vb">
+      <DependentUpon>listhelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\additem.aspx.designer.vb">
+      <DependentUpon>additem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\additem.aspx.vb">
+      <DependentUpon>additem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\deleteitem.aspx.designer.vb">
+      <DependentUpon>deleteitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\deleteitem.aspx.vb">
+      <DependentUpon>deleteitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\edititem.aspx.designer.vb">
+      <DependentUpon>edititem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\edititem.aspx.vb">
+      <DependentUpon>edititem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\inventory_functions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\listitem.aspx.designer.vb">
+      <DependentUpon>listitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\listitem.aspx.vb">
+      <DependentUpon>listitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\newage\listitems.aspx.designer.vb">
+      <DependentUpon>listitems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\newage\listitems.aspx.vb">
+      <DependentUpon>listitems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\plate\inventory.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\plate\plate.ascx.designer.vb">
+      <DependentUpon>plate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\plate\plate.ascx.vb">
+      <DependentUpon>plate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\plate\sp_diamonds.ascx.designer.vb">
+      <DependentUpon>sp_diamonds.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\plate\sp_diamonds.ascx.vb">
+      <DependentUpon>sp_diamonds.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\plate\sp_gemstones.ascx.designer.vb">
+      <DependentUpon>sp_gemstones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\plate\sp_gemstones.ascx.vb">
+      <DependentUpon>sp_gemstones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\plate\sp_jewelry.ascx.designer.vb">
+      <DependentUpon>sp_jewelry.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\plate\sp_jewelry.ascx.vb">
+      <DependentUpon>sp_jewelry.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\viewitem.aspx.designer.vb">
+      <DependentUpon>viewitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\viewitem.aspx.vb">
+      <DependentUpon>viewitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="message.aspx.designer.vb">
+      <DependentUpon>message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="message.aspx.vb">
+      <DependentUpon>message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\banners.aspx.designer.vb">
+      <DependentUpon>banners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\banners.aspx.vb">
+      <DependentUpon>banners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\banner_view.aspx.designer.vb">
+      <DependentUpon>banner_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\banner_view.aspx.vb">
+      <DependentUpon>banner_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\diamond-importer.aspx.designer.vb">
+      <DependentUpon>diamond-importer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\diamond-importer.aspx.vb">
+      <DependentUpon>diamond-importer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\ds_feedbacks.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_feedbacks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="new\editsidestones.aspx.designer.vb">
+      <DependentUpon>editsidestones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\editsidestones.aspx.vb">
+      <DependentUpon>editsidestones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\fancydiamondsnet.aspx.designer.vb">
+      <DependentUpon>fancydiamondsnet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\fancydiamondsnet.aspx.vb">
+      <DependentUpon>fancydiamondsnet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\feedbacks.aspx.designer.vb">
+      <DependentUpon>feedbacks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\feedbacks.aspx.vb">
+      <DependentUpon>feedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\feeds.aspx.designer.vb">
+      <DependentUpon>feeds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\feeds.aspx.vb">
+      <DependentUpon>feeds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\gems-converter.aspx.designer.vb">
+      <DependentUpon>gems-converter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\gems-converter.aspx.vb">
+      <DependentUpon>gems-converter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\groups.aspx.designer.vb">
+      <DependentUpon>groups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\groups.aspx.vb">
+      <DependentUpon>groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\idex.aspx.designer.vb">
+      <DependentUpon>idex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\idex.aspx.vb">
+      <DependentUpon>idex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\link-exchange.aspx.designer.vb">
+      <DependentUpon>link-exchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\link-exchange.aspx.vb">
+      <DependentUpon>link-exchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\newfeedbacks.aspx.designer.vb">
+      <DependentUpon>newfeedbacks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\newfeedbacks.aspx.vb">
+      <DependentUpon>newfeedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\search_edit.aspx.designer.vb">
+      <DependentUpon>search_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\search_edit.aspx.vb">
+      <DependentUpon>search_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\seventytwo.aspx.designer.vb">
+      <DependentUpon>seventytwo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\seventytwo.aspx.vb">
+      <DependentUpon>seventytwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new\update-internal.aspx.designer.vb">
+      <DependentUpon>update-internal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new\update-internal.aspx.vb">
+      <DependentUpon>update-internal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="old-note-prog.aspx.designer.vb">
+      <DependentUpon>old-note-prog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="old-note-prog.aspx.vb">
+      <DependentUpon>old-note-prog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\addorder.aspx.designer.vb">
+      <DependentUpon>addorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\addorder.aspx.vb">
+      <DependentUpon>addorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\list-orders.aspx.designer.vb">
+      <DependentUpon>list-orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\list-orders.aspx.vb">
+      <DependentUpon>list-orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\newage\orderslist.aspx.designer.vb">
+      <DependentUpon>orderslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\newage\orderslist.aspx.vb">
+      <DependentUpon>orderslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\new\order_payment_edit.aspx.designer.vb">
+      <DependentUpon>order_payment_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\new\order_payment_edit.aspx.vb">
+      <DependentUpon>order_payment_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\new\wc_payment_methods.ascx.designer.vb">
+      <DependentUpon>wc_payment_methods.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\new\wc_payment_methods.ascx.vb">
+      <DependentUpon>wc_payment_methods.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\order.aspx.designer.vb">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\order.aspx.vb">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\order_get_payment.aspx.designer.vb">
+      <DependentUpon>order_get_payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\order_get_payment.aspx.vb">
+      <DependentUpon>order_get_payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\order_invoice.aspx.designer.vb">
+      <DependentUpon>order_invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\order_invoice.aspx.vb">
+      <DependentUpon>order_invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\order_status.aspx.designer.vb">
+      <DependentUpon>order_status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\order_status.aspx.vb">
+      <DependentUpon>order_status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\printorder.aspx.designer.vb">
+      <DependentUpon>printorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\printorder.aspx.vb">
+      <DependentUpon>printorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\wc_cart_content.ascx.designer.vb">
+      <DependentUpon>wc_cart_content.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\wc_cart_content.ascx.vb">
+      <DependentUpon>wc_cart_content.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\wc_get_payments.ascx.designer.vb">
+      <DependentUpon>wc_get_payments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\wc_get_payments.ascx.vb">
+      <DependentUpon>wc_get_payments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\wc_order.ascx.designer.vb">
+      <DependentUpon>wc_order.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\wc_order.ascx.vb">
+      <DependentUpon>wc_order.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\wc_order_reconsile.ascx.designer.vb">
+      <DependentUpon>wc_order_reconsile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\wc_order_reconsile.ascx.vb">
+      <DependentUpon>wc_order_reconsile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\wc_order_status.ascx.designer.vb">
+      <DependentUpon>wc_order_status.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\wc_order_status.ascx.vb">
+      <DependentUpon>wc_order_status.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders\wc_order_totals.ascx.designer.vb">
+      <DependentUpon>wc_order_totals.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="orders\wc_order_totals.ascx.vb">
+      <DependentUpon>wc_order_totals.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rates\rates.aspx.designer.vb">
+      <DependentUpon>rates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rates\rates.aspx.vb">
+      <DependentUpon>rates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stats.aspx.designer.vb">
+      <DependentUpon>stats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stats.aspx.vb">
+      <DependentUpon>stats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="statsbase.aspx.designer.vb">
+      <DependentUpon>statsbase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="statsbase.aspx.vb">
+      <DependentUpon>statsbase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="suppliers\listsuppliers.aspx.designer.vb">
+      <DependentUpon>listsuppliers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="suppliers\listsuppliers.aspx.vb">
+      <DependentUpon>listsuppliers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="suppliers\supplierstatus.aspx.designer.vb">
+      <DependentUpon>supplierstatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="suppliers\supplierstatus.aspx.vb">
+      <DependentUpon>supplierstatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testmodules\test-mail.aspx.designer.vb">
+      <DependentUpon>test-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testmodules\test-mail.aspx.vb">
+      <DependentUpon>test-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web References\net.webservicex.www\Reference.vb">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="webcontrols\base\combo.ascx.designer.vb">
+      <DependentUpon>combo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="webcontrols\base\combo.ascx.vb">
+      <DependentUpon>combo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webcontrols\base\topmanu.ascx.designer.vb">
+      <DependentUpon>topmanu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="webcontrols\base\topmanu.ascx.vb">
+      <DependentUpon>topmanu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webcontrols\orders\tasklist.ascx.designer.vb">
+      <DependentUpon>tasklist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="webcontrols\orders\tasklist.ascx.vb">
+      <DependentUpon>tasklist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webcontrols\ruler.ascx.designer.vb">
+      <DependentUpon>ruler.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="webcontrols\ruler.ascx.vb">
+      <DependentUpon>ruler.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="accounting\accountstatus.aspx" />
+    <Content Include="accounting\checkbooks\checkbook.aspx" />
+    <Content Include="accounting\checkbooks\editcheckbook.aspx" />
+    <Content Include="accounting\checkbooks\listcheckbooks.aspx" />
+    <Content Include="accounting\currency_rates.aspx" />
+    <Content Include="accounting\list-cashflow.aspx" />
+    <Content Include="accounting\listaccounts.aspx" />
+    <Content Include="accounting\receive-payment.aspx" />
+    <Content Include="ajax\ajax_db.aspx" />
+    <Content Include="ajax\inventory_ajax.aspx" />
+    <Content Include="ajax\orders_ajax.aspx" />
+    <Content Include="apperror.aspx" />
+    <Content Include="aspxerror.aspx" />
+    <Content Include="calendar.aspx" />
+    <Content Include="customers\addcustomer.aspx" />
+    <Content Include="customers\editcustomer.aspx" />
+    <Content Include="customers\listcustomers.aspx" />
+    <Content Include="customers\wc_customer.ascx" />
+    <Content Include="default.aspx" />
+    <Content Include="default.css" />
+    <Content Include="ebay\controls\csvstrip.ascx" />
+    <Content Include="ebay\ebaycsv.aspx" />
+    <Content Include="ebay\ebaycsv_au.aspx" />
+    <Content Include="ebay\ebaycsv_fr.aspx" />
+    <Content Include="ebay\ebayoffice.aspx" />
+    <Content Include="ebay\htmlpreset.aspx" />
+    <Content Include="ebay\syncitems.aspx" />
+    <Content Include="ebay\test.aspx" />
+    <Content Include="ebay\twinlister.aspx" />
+    <Content Include="generate_td-htm.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="help\addhelp.aspx" />
+    <Content Include="help\help.aspx" />
+    <Content Include="help\help_script.ascx" />
+    <Content Include="help\listhelp.aspx" />
+    <Content Include="inventory\additem.aspx" />
+    <Content Include="inventory\deleteitem.aspx" />
+    <Content Include="inventory\edititem.aspx" />
+    <Content Include="inventory\listitem.aspx" />
+    <Content Include="inventory\newage\listitems.aspx" />
+    <Content Include="inventory\plate\extra_schema.xml" />
+    <Content Include="inventory\plate\inventory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventory.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="inventory\plate\jewel_extended.xml" />
+    <Content Include="inventory\plate\plate.ascx" />
+    <Content Include="inventory\plate\sp_diamonds.ascx" />
+    <Content Include="inventory\plate\sp_gemstones.ascx" />
+    <Content Include="inventory\plate\sp_jewelry.ascx" />
+    <Content Include="inventory\viewitem.aspx" />
+    <Content Include="message.aspx" />
+    <Content Include="new\banners.aspx" />
+    <Content Include="new\banner_view.aspx" />
+    <Content Include="new\diamond-importer.aspx" />
+    <Content Include="new\ds_feedbacks.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_feedbacks.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="new\editsidestones.aspx" />
+    <Content Include="new\fancydiamondsnet.aspx" />
+    <Content Include="new\feedbacks.aspx" />
+    <Content Include="new\feeds.aspx" />
+    <Content Include="new\gems-converter.aspx" />
+    <Content Include="new\groups.aspx" />
+    <Content Include="new\idex.aspx" />
+    <Content Include="new\link-exchange.aspx" />
+    <Content Include="new\newfeedbacks.aspx" />
+    <Content Include="new\search_edit.aspx" />
+    <Content Include="new\seventytwo.aspx" />
+    <Content Include="new\update-internal.aspx" />
+    <Content Include="old-note-prog.aspx" />
+    <Content Include="orders\addorder.aspx" />
+    <Content Include="orders\list-orders.aspx" />
+    <Content Include="orders\newage\orders.js" />
+    <Content Include="orders\newage\orderslist.aspx" />
+    <Content Include="orders\new\order_payment_edit.aspx" />
+    <Content Include="orders\new\wc_payment_methods.ascx" />
+    <Content Include="orders\order.aspx" />
+    <Content Include="orders\order_get_payment.aspx" />
+    <Content Include="orders\order_invoice.aspx" />
+    <Content Include="orders\order_status.aspx" />
+    <Content Include="orders\printorder.aspx" />
+    <Content Include="orders\todo.xml" />
+    <Content Include="orders\wc_cart_content.ascx" />
+    <Content Include="orders\wc_get_payments.ascx" />
+    <Content Include="orders\wc_order.ascx" />
+    <Content Include="orders\wc_order_reconsile.ascx" />
+    <Content Include="orders\wc_order_status.ascx" />
+    <Content Include="orders\wc_order_totals.ascx" />
+    <Content Include="pic\appraisal-td.jpg" />
+    <Content Include="pic\appraisal-td2.jpg" />
+    <Content Include="pic\appraisal-td3.jpg" />
+    <Content Include="pic\appraisal-td6.jpg" />
+    <Content Include="pic\back.jpg" />
+    <Content Include="pic\calendar.gif" />
+    <Content Include="pic\close.gif" />
+    <Content Include="pic\close.jpg" />
+    <Content Include="pic\club-item.gif" />
+    <Content Include="pic\help.gif" />
+    <Content Include="pic\helpm.gif" />
+    <Content Include="pic\newconst\inventory\base\checkmark.gif" />
+    <Content Include="pic\newconst\inventory\base\loader.gif" />
+    <Content Include="pic\newconst\inventory\base\xmark.gif" />
+    <Content Include="pic\no_icon.gif" />
+    <Content Include="pic\no_picture.gif" />
+    <Content Include="pic\paper-logo.gif" />
+    <Content Include="pic\paper-logo.jpg" />
+    <Content Include="pic\style_club.gif" />
+    <Content Include="rates\rates.aspx" />
+    <Content Include="script\norefresh.js" />
+    <Content Include="stats.aspx" />
+    <Content Include="statsbase.aspx" />
+    <Content Include="Styles.css" />
+    <Content Include="suppliers\listsuppliers.aspx" />
+    <Content Include="suppliers\supplierstatus.aspx" />
+    <Content Include="testmodules\test-mail.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="webcontrols\base\combo.ascx" />
+    <Content Include="webcontrols\base\topmanu.ascx" />
+    <Content Include="webcontrols\orders\tasklist.ascx" />
+    <Content Include="webcontrols\ruler.ascx" />
+    <Content Include="xml\faces.xml" />
+    <Content Include="xml\itemdesc.xml" />
+    <EmbeddedResource Include="accounting\accountstatus.aspx.resx">
+      <DependentUpon>accountstatus.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accounting\checkbooks\checkbook.aspx.resx">
+      <DependentUpon>checkbook.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accounting\checkbooks\editcheckbook.aspx.resx">
+      <DependentUpon>editcheckbook.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accounting\checkbooks\listcheckbooks.aspx.resx">
+      <DependentUpon>listcheckbooks.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accounting\currency_rates.aspx.resx">
+      <DependentUpon>currency_rates.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accounting\list-cashflow.aspx.resx">
+      <DependentUpon>list-cashflow.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accounting\listaccounts.aspx.resx">
+      <DependentUpon>listaccounts.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accounting\receive-payment.aspx.resx">
+      <DependentUpon>receive-payment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajax\ajax_db.aspx.resx">
+      <DependentUpon>ajax_db.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajax\inventory_ajax.aspx.resx">
+      <DependentUpon>inventory_ajax.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajax\orders_ajax.aspx.resx">
+      <DependentUpon>orders_ajax.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apperror.aspx.resx">
+      <DependentUpon>apperror.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aspxerror.aspx.resx">
+      <DependentUpon>aspxerror.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calendar.aspx.resx">
+      <DependentUpon>calendar.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers\addcustomer.aspx.resx">
+      <DependentUpon>addcustomer.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers\editcustomer.aspx.resx">
+      <DependentUpon>editcustomer.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers\listcustomers.aspx.resx">
+      <DependentUpon>listcustomers.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customers\wc_customer.ascx.resx">
+      <DependentUpon>wc_customer.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebay\controls\csvstrip.ascx.resx">
+      <DependentUpon>csvstrip.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebay\ebaycsv.aspx.resx">
+      <DependentUpon>ebaycsv.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebay\ebaycsv_au.aspx.resx">
+      <DependentUpon>ebaycsv_au.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebay\ebaycsv_fr.aspx.resx">
+      <DependentUpon>ebaycsv_fr.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebay\ebayoffice.aspx.resx">
+      <DependentUpon>ebayoffice.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebay\htmlpreset.aspx.resx">
+      <DependentUpon>htmlpreset.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebay\syncitems.aspx.resx">
+      <DependentUpon>syncitems.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebay\test.aspx.resx">
+      <DependentUpon>test.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebay\twinlister.aspx.resx">
+      <DependentUpon>twinlister.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generate_td-htm.aspx.resx">
+      <DependentUpon>generate_td-htm.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help\addhelp.aspx.resx">
+      <DependentUpon>addhelp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help\help.aspx.resx">
+      <DependentUpon>help.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help\help_script.ascx.resx">
+      <DependentUpon>help_script.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help\listhelp.aspx.resx">
+      <DependentUpon>listhelp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\additem.aspx.resx">
+      <DependentUpon>additem.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\deleteitem.aspx.resx">
+      <DependentUpon>deleteitem.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\edititem.aspx.resx">
+      <DependentUpon>edititem.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\listitem.aspx.resx">
+      <DependentUpon>listitem.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\newage\listitems.aspx.resx">
+      <DependentUpon>listitems.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\plate\plate.ascx.resx">
+      <DependentUpon>plate.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\plate\sp_diamonds.ascx.resx">
+      <DependentUpon>sp_diamonds.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\plate\sp_gemstones.ascx.resx">
+      <DependentUpon>sp_gemstones.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\plate\sp_jewelry.ascx.resx">
+      <DependentUpon>sp_jewelry.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory\viewitem.aspx.resx">
+      <DependentUpon>viewitem.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="message.aspx.resx">
+      <DependentUpon>message.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\banners.aspx.resx">
+      <DependentUpon>banners.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\banner_view.aspx.resx">
+      <DependentUpon>banner_view.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\diamond-importer.aspx.resx">
+      <DependentUpon>diamond-importer.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\editsidestones.aspx.resx">
+      <DependentUpon>editsidestones.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\fancydiamondsnet.aspx.resx">
+      <DependentUpon>fancydiamondsnet.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\feedbacks.aspx.resx">
+      <DependentUpon>feedbacks.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\feeds.aspx.resx">
+      <DependentUpon>feeds.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\gems-converter.aspx.resx">
+      <DependentUpon>gems-converter.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\groups.aspx.resx">
+      <DependentUpon>groups.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\idex.aspx.resx">
+      <DependentUpon>idex.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\link-exchange.aspx.resx">
+      <DependentUpon>link-exchange.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\newfeedbacks.aspx.resx">
+      <DependentUpon>newfeedbacks.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\search_edit.aspx.resx">
+      <DependentUpon>search_edit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\seventytwo.aspx.resx">
+      <DependentUpon>seventytwo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new\update-internal.aspx.resx">
+      <DependentUpon>update-internal.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="old-note-prog.aspx.resx">
+      <DependentUpon>old-note-prog.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\addorder.aspx.resx">
+      <DependentUpon>addorder.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\list-orders.aspx.resx">
+      <DependentUpon>list-orders.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\newage\orderslist.aspx.resx">
+      <DependentUpon>orderslist.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\new\order_payment_edit.aspx.resx">
+      <DependentUpon>order_payment_edit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\new\wc_payment_methods.ascx.resx">
+      <DependentUpon>wc_payment_methods.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\order.aspx.resx">
+      <DependentUpon>order.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\order_get_payment.aspx.resx">
+      <DependentUpon>order_get_payment.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\order_invoice.aspx.resx">
+      <DependentUpon>order_invoice.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\order_status.aspx.resx">
+      <DependentUpon>order_status.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\printorder.aspx.resx">
+      <DependentUpon>printorder.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\wc_cart_content.ascx.resx">
+      <DependentUpon>wc_cart_content.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\wc_get_payments.ascx.resx">
+      <DependentUpon>wc_get_payments.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\wc_order.ascx.resx">
+      <DependentUpon>wc_order.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\wc_order_reconsile.ascx.resx">
+      <DependentUpon>wc_order_reconsile.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\wc_order_status.ascx.resx">
+      <DependentUpon>wc_order_status.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orders\wc_order_totals.ascx.resx">
+      <DependentUpon>wc_order_totals.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rates\rates.aspx.resx">
+      <DependentUpon>rates.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stats.aspx.resx">
+      <DependentUpon>stats.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statsbase.aspx.resx">
+      <DependentUpon>statsbase.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suppliers\listsuppliers.aspx.resx">
+      <DependentUpon>listsuppliers.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suppliers\supplierstatus.aspx.resx">
+      <DependentUpon>supplierstatus.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testmodules\test-mail.aspx.resx">
+      <DependentUpon>test-mail.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webcontrols\base\combo.ascx.resx">
+      <DependentUpon>combo.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webcontrols\base\topmanu.ascx.resx">
+      <DependentUpon>topmanu.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webcontrols\orders\tasklist.ascx.resx">
+      <DependentUpon>tasklist.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webcontrols\ruler.ascx.resx">
+      <DependentUpon>ruler.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="inventory\plate\inventory.xsc">
+      <DependentUpon>inventory.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\plate\inventory.xss">
+      <DependentUpon>inventory.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\plate\inventory.xsx">
+      <DependentUpon>inventory.xsd</DependentUpon>
+    </None>
+    <None Include="new\ds_feedbacks.xsx">
+      <DependentUpon>ds_feedbacks.xsd</DependentUpon>
+    </None>
+    <None Include="sg-config.ini" />
+    <None Include="Web References\net.webservicex.www\CurrencyConvertor.wsdl" />
+    <None Include="Web References\net.webservicex.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <WebReferences Include="Web References\" />
+    <WebReferenceUrl Include="http://www.webservicex.net/CurrencyConvertor.asmx%3fwsdl">
+      <RelPath>Web References\net.webservicex.www\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53071</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8888</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

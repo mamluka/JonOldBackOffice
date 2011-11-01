@@ -1,0 +1,246 @@
+.formlabel
+{
+	font-size: 8pt;
+	color: midnightblue;
+	font-family: verdana,arial;
+}
+
+.formheading
+{
+	border-right: aliceblue 1px solid;
+	padding-right: 3px;
+	border-top: aliceblue 1px solid;
+	padding-left: 3px;
+	font-weight: normal;
+	font-size: 8pt;
+	padding-bottom: 1px;
+	border-left: aliceblue 1px solid;
+	color: whitesmoke;
+	padding-top: 1px;
+	border-bottom: aliceblue 1px solid;
+	font-family: verdana,arial;
+	background-color: steelblue;
+}
+
+
+.DisabledField
+{
+	border-right: lightgrey 1px solid;
+	border-top: lightgrey 1px solid;
+	font-size: 8pt;
+	border-left: lightgrey 1px solid;
+	color: gainsboro;
+	border-bottom: lightgrey 1px solid;
+	font-family: verdana,arial;
+	background-color: steelblue;
+}
+
+.EnabledField
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	font-size: 8pt;
+	border-left: darkgray 1px solid;
+	color: darkslateblue;
+	border-bottom: darkgray 1px solid;
+	font-family: verdana,arial;
+	background-color: lavender;
+}
+
+.SubmitButton
+{
+	border-right: steelblue 1px solid;
+	padding-right: 4px;
+	border-top: steelblue 1px solid;
+	padding-left: 4px;
+	font-weight: bold;
+	font-size: 9pt;
+	padding-bottom: 1px;
+	border-left: steelblue 1px solid;
+	color: linen;
+	padding-top: 1px;
+	border-bottom: steelblue 1px solid;
+	font-family: verdana,arial;
+	background-color: slategray;
+}
+
+.GoButton
+{
+	border-right: steelblue 1px solid;
+	padding-right: 2px;
+	border-top: steelblue 1px solid;
+	padding-left: 2px;
+	font-size: 8pt;
+	border-left: steelblue 1px solid;
+	color: linen;
+	border-bottom: steelblue 1px solid;
+	font-family: verdana,arial;
+	background-color: slategray;
+}
+
+.MenuButton
+{
+	border-right: lightsteelblue 1px solid;
+	padding-right: 2px;
+	border-top: lightsteelblue 1px solid;
+	padding-left: 2px;
+	font-size: 8pt;
+	border-left: lightsteelblue 1px solid;
+	color: linen;
+	border-bottom: lightsteelblue 1px solid;
+	font-family: verdana,arial;
+	background-color: darkslateblue;
+}
+
+.InlineButton
+{
+	border-right: lightsteelblue 1px solid;
+	border-top: lightsteelblue 1px solid;
+	font-size: 8pt;
+	border-left: lightsteelblue 1px solid;
+	color: linen;
+	border-bottom: lightsteelblue 1px solid;
+	font-family: verdana,arial;
+	background-color: darkslateblue;
+}
+
+.SearchButton
+{
+	border-right: steelblue 1px solid;
+	padding-right: 2px;
+	border-top: steelblue 1px solid;
+	padding-left: 2px;
+	font-size: 8pt;
+	border-left: steelblue 1px solid;
+	color: darkslateblue;
+	border-bottom: steelblue 1px solid;
+	font-family: verdana,arial;
+	background-color: silver;
+}
+.ActiveButton
+{
+	border-right: white 2px groove;
+	border-top: white 2px groove;
+	font-size: 8pt;
+	border-left: white 2px groove;
+	color: red;
+	border-bottom: white 2px groove;
+	font-family: verdana,arial;
+	background-color: gainsboro;
+}
+
+.InActiveButton
+{
+	border-right: white 2px groove;
+	padding-right: 2px;
+	border-top: white 2px groove;
+	padding-left: 2px;
+	font-size: 8pt;
+	border-left: white 2px groove;
+	color: midnightblue;
+	border-bottom: white 2px groove;
+	font-family: verdana,arial;
+	background-color: lightgrey;
+}
+
+.TableNoborder
+{
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+}
+
+BODY
+{
+	font-size: 8pt;
+	color: midnightblue;
+	font-family: Verdana, arial;
+}
+
+TABLE
+{
+	border-right: steelblue 1px solid;
+	border-top: steelblue 1px solid;
+	font-size: 8pt;
+	border-left: steelblue 1px solid;
+	color: linen;
+	border-bottom: steelblue 1px solid;
+	font-family: Verdana, arial;
+}
+
+A:link
+{
+	border-right: gainsboro 1px solid;
+	padding-right: 2px;
+	border-top: gainsboro 1px solid;
+	padding-left: 2px;
+	border-left: gainsboro 1px solid;
+	color: slategray;
+	border-bottom: gainsboro 1px solid;
+	font-family: verdana,arial;
+	background-color: transparent;
+	text-decoration: none;
+}	
+		
+A:visited
+{
+	border-right: gainsboro 1px solid;
+	padding-right: 2px;
+	border-top: gainsboro 1px solid;
+	padding-left: 2px;
+	border-left: gainsboro 1px solid;
+	color: slategray;
+	border-bottom: gainsboro 1px solid;
+	font-family: verdana,arial;
+	text-decoration: none;
+}	
+		
+A:active
+{
+	border-right: gainsboro 1px solid;
+	padding-right: 2px;
+	border-top: gainsboro 1px solid;
+	padding-left: 2px;
+	border-left: gainsboro 1px solid;
+	color: slategray;
+	border-bottom: gainsboro 1px solid;
+	font-family: verdana,arial;
+	text-decoration: none;
+}	
+		
+A:hover
+{
+	color: seashell;
+	background-color: slategray;
+}
+	
+.no
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	background-image: none;
+	padding-bottom: 0px;
+	border-top-style: none;
+	padding-top: 0px;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: transparent;
+	text-decoration: none;
+	border-bottom-style: none;
+}
+
+.no:HOVER
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	background-image: none;
+	padding-bottom: 0px;
+	border-top-style: none;
+	padding-top: 0px;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: transparent;
+	text-decoration: none;
+	border-bottom-style: none;
+}

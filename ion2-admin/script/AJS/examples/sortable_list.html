@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Sortable list</title>
+    <script type="text/javascript" src="../AJS.js"></script>
+    <link href="../static/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <style type="text/css">
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 200px;
+        }
+
+        td {
+            padding: 3px;
+        }
+
+        .item {
+            background-color: #fff2c3;
+            border: 1px solid #999;
+            width: 150px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Sortable list</h2>
+<ul id="list">
+    <li class="item">1</li>
+    <li class="item">2</li>
+    <li class="item">3</li>
+    <li class="item">4</li>
+    <li class="item">5</li>
+</ul>
+
+<script>
+var table_items = AJS.$bytc('li', null, AJS.$('list'));
+
+var on_hover = function(drop_zone, click_elm, drag_elm) {
+    var drag_elm = AJS.drag_elm;
+    if(drop_zone != click_elm) {
+        var d_z_top = drop_zone.offsetTop;
+        var d_z_middle = drop_zone.offsetTop + (drop_zone.offsetHeight/2);
+        var d_e_bottom = drag_elm.offsetTop + drag_elm.offsetHeight;
+        var d_e_top = drag_elm.offsetTop;
+
+        if(d_e_bottom > d_z_middle && d_e_top < d_z_top)
+            AJS.insertAfter(click_elm, drop_zone);
+        if(d_e_top < d_z_middle && d_e_top > d_z_top)
+            AJS.insertBefore(click_elm, drop_zone);
+    }
+}
+
+var on_drag = function(click_elm) {
+    AJS.setOpacity(AJS.drag_elm, 0.75);
+}
+
+AJS.map(table_items, function(item) {
+    AJS.dragAble(item, null, {
+                             move_x: false,
+                             on_drag: on_drag,
+                             hide_on_move: true});
+    AJS.dropZone(item, {on_hover: on_hover});
+});
+</script>
+
+		<script language="Javascript">
+
+		</script>
+		<script language="javascript1.1" src="http://www.twin-diamonds.com/indextools_ssl.js"></script>
+		<noscript>
+			<img src="http://stats.indextools.com/p.pl?a=10001017618097&amp;js=no" width="1" height="1"></noscript>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2363079-1";
+urchinTracker();
+</script>
+</body>
+</html>

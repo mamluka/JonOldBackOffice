@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Milonic DHTML/JavaScript Menu Sample Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<style type="text/css">
+BODY{
+	FONT-FAMILY:verdana;
+	font-size:12px;
+	background-color:#FFFFFF;
+}
+
+.backG {
+	FONT-FAMILY:verdana;
+	background-color:#93c39b; 
+	color:#ffffff; 
+	border-bottom:#538c4d 2px solid;
+	font-size:12px;
+}	
+td.form1
+{
+	FONT-FAMILY:verdana;
+	background:#eaeaea;
+	font-size:12px;
+}
+
+.current_menu_item { 
+font-weight:bold; 
+} 
+
+</style>	
+</head>
+
+<body>
+
+
+
+<script type="text/javascript" src="../../milonic_src.js"></script>	
+
+<script type="text/javascript">
+if(ns4)_d.write("<scr"+"ipt type=text/javascript src=../../mmenuns4.js><\/scr"+"ipt>");		
+  else _d.write("<scr"+"ipt type=text/javascript src=../../mmenudom.js><\/scr"+"ipt>"); 
+  	
+  	
+_menuCloseDelay=500              // The delay for menus to remain visible on mouse off
+_menuOpenDelay=150               // The delay for opening menus on mouse over
+_subOffsetTop=0;                 // Sub menu offset Top position
+_subOffsetLeft=0;                // Sub menu offset Left position
+
+
+with(menuStyle=new mm_style()){
+styleid=4;
+bordercolor="#296488";
+borderstyle="solid";
+borderwidth=1;
+fontfamily="Verdana";
+fontstyle="normal";
+headerbgcolor="#ffffff";
+headercolor="#000000";
+offbgcolor="#DCE9F0";
+offcolor="#515151";
+onbgcolor="#4F8EB6";
+oncolor="#ffffff";
+outfilter="randomdissolve(duration=0.3)";
+overfilter="Fade(duration=0.2);Alpha(opacity=90);Shadow(color=#777777', Direction=135, Strength=5)";
+padding=5;
+pagebgcolor="#82B6D7";
+pagecolor="black";
+separatorcolor="#2D729D";
+separatorpadding=2;
+separatorsize=1;
+separatorwidth="90%";
+subimage="menuimages/arrow.gif";
+subimagepadding=2;
+}
+
+function showitem()
+{
+	output="";
+	for(a=0;a<_mi.length;a++)
+	{
+		output+=_mi[a]+"\n"
+	}
+	//alert(output)
+	return output
+}
+
+
+function showmenu()
+{
+	output="";
+	for(a=0;a<_m.length;a++)
+	{
+		output+=_m[a]+"\n"
+	}
+	//alert(output)
+	return output
+}  	
+
+
+function showData()
+{
+	return
+	_d.forms['f1']['ta1'].value=showmenu();
+	_d.forms['f1']['ta1'].value+="\n"+showitem();
+}
+
+
+itemid=-1
+function item_on()
+{
+itemid=_itemRef
+menuid=_mi[_itemRef][0]
+document.forms.sampf.mir.value=itemid
+document.forms.sampf.mt.value=_mi[_itemRef][1]
+}
+
+function item_off()
+{
+	document.forms.sampf.mir.value=""
+	document.forms.sampf.mt.value=""
+}
+
+
+function updateItem()
+{
+	if(itemid<0)
+	{
+		alert("Please Select an Item")
+		return
+	}
+	else
+	{
+		mm_editItemByItemRef(itemid, "text="+document.forms.sampf.mt.value)
+		document.forms.sampf.ta.value+="mm_editItemByItemRef("+itemid+", \"text="+document.forms.sampf.mt.value+"\");\n"
+	}
+}
+
+function addMenu()
+{
+	aI_Text=";url=andy;text=Menu: "+_m.length+", Item Reference: "+_mi.length+";clickfunction=item_on();"
+	mm_addMenu(menuStyle,'left=400',aI_Text);
+	showData()
+	cmd="mm_addMenu(menuStyle,'left=400','"+aI_Text+"');\n"
+	cmd=cmd.replace(/dragable=1;/g,"")
+	cmd=cmd.replace(/clickfunction=item_on\(\);/g,"")
+	cmd=cmd.replace(/url=andy\.php;pointer=move;/g,"")
+	document.forms.sampf.ta.value+=cmd
+}
+
+function addItem()
+{
+	aI_Text="text=New Item Reference: "+_mi.length+";clickfunction=item_on();"
+	mm_addItemByItemRef(_mi.length-1,aI_Text);
+	showData();
+	
+	cmd="mm_addItemByItemRef("+(_mi.length-1)+",'"+aI_Text+"');\n"
+	cmd=cmd.replace(/clickfunction=item_on\(\);/g,"")
+	document.forms.sampf.ta.value+=cmd
+}
+
+
+function deleteItem()
+{
+	if(itemid<0)
+	{
+		alert("Please Select an Item before trying to delete and item")
+		return
+	}
+	else
+	{
+		mm_deleteItemByItemRef(itemid)
+		document.forms.sampf.ta.value+="mm_deleteItemByItemRef("+itemid+");\n"
+		item_off()
+	}
+	
+}
+
+function deleteMenu()
+{
+	if(itemid<0)
+	{
+		alert("Please Select an Item before trying to delete its Menu")
+		return
+	}
+	else
+	{
+		mm_deleteMenu(menuid)
+		document.forms.sampf.ta.value+="mm_deleteMenu("+menuid+");\n"
+		item_off()
+	}
+	
+}
+</script>
+
+<script type="text/javascript" src="mm_menueditapi.js"></script>
+
+
+1. Click on "Create New Menu" to create a new menu<br>
+2. Click on "Insert New Item" a few times to create a few menu items<br>
+3. Then select a menu item by clicking on it on the menu<br>
+4. Edit the Text ad click Update Selected Item<br>
+5. Select another item and click on "Delete selected Item"<br>
+6. Click on "Delete Menu"<br>
+<br>
+You've just dynamically created a menu, some items edited them and then deleted them.<br>
+The functions used are displayed in the text area for your reference<br>
+<br>
+<UL>
+	<li><a href="javascript:addMenu()">Create New Menu</a>
+		<ul>
+		<li><a href="javascript:addItem()">Insert New Item</a>
+	</ul>
+</ul>
+
+<!--
+<div style="position:absolute;left:420px;top:410px;">
+	<form id=f1>
+		<textarea id=ta1 cols=130 rows=30 style="font-size:11px;font-family:verdana"></textarea>
+		<input id=t1 type=text size=100 ></input>
+	</form>
+</div>
+-->
+		<form name=sampf id=sampf>
+			<table cellpadding=0 cellspacing=0>
+			<tr><td align=right>Menu Item Reference:&nbsp;<td><input type=text id="mir" name="mir" size="20" disabled></td></tr>
+			<tr><td align=right>Menu Item Text:&nbsp;<td><input type=text id="mt" name="mt" size="20"></td></tr>
+			</table>
+<br>
+			<a href=# onclick=updateItem()>Click to Update Selected Item</a><br><br>
+			<a href=# onclick=deleteItem()>Delete Selected Item</a><br><br>
+			<a href=# onclick=deleteMenu()>Click to Delete Menu By Menu Item</a><br><br>
+
+			<br>Functions/Commannds:<br>
+			<textarea name=ta cols=120 rows=16 style="font-size:11px;font-family:verdana;"></textarea>
+		</form>
+	
+	
+
+
+
+<a href=http://www.milonic.com/>JavaScript Menu Powered by Milonic</a>
+
+		<script language="Javascript">
+
+		</script>
+		<script language="javascript1.1" src="http://www.twin-diamonds.com/indextools_ssl.js"></script>
+		<noscript>
+			<img src="http://stats.indextools.com/p.pl?a=10001017618097&amp;js=no" width="1" height="1"></noscript>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2363079-1";
+urchinTracker();
+</script>
+</body>
+</html>

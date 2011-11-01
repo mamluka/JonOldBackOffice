@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>Drag and drop example</title>
+  <script type="text/javascript" src="../AJS.js"></script>
+  <link href="../static/style.css" rel="stylesheet" type="text/css" media="all" />
+
+  <style type="text/css">
+    .draggy {
+      width: 100px;
+      height: 100px;
+      background-color: #ffffcc;
+      z-index: 100;
+    }
+
+    .draggy_handler {
+      background-color: #999;
+      padding: 5px 0 5px 0;
+      text-align: center;
+    }
+
+    .droppy {
+      width: 300px;
+      height: 300px;
+      color: white;
+    }
+
+    .color_red {
+      background-color: red;
+    }
+    #drop_red {
+      float: left;
+    }
+
+    .color_blue {
+      background-color: blue;
+    }
+    #drop_blue {
+      float: right;
+    }
+  </style>
+
+</head>
+<body>
+
+<h2>Drag and drop made easy</h2>
+<div id="draggy" class="draggy">
+  <div id="draggy_handler" class="draggy_handler">
+    Drag handler
+  </div>
+</div>
+<br />
+<div>
+  <div class="droppy color_red" id="drop_red">Color draggy red</div>
+  <div class="droppy color_blue" id="drop_blue">Color droppy blue</div>
+</div>
+
+<script>
+  AJS.dragAble('draggy', 'draggy_handler', {moveable: true});
+  AJS.dragAble('drop_red');
+  AJS.dragAble('drop_blue');
+
+  var change_appr = function(click_elm, drag_elm, new_class) {
+    if(click_elm.id == "draggy") {
+      AJS.setClass(click_elm, drag_elm, new_class);
+    }
+  }
+
+  var red_eval = function(drop_zone, click_elm, drag_elm) {
+    change_appr(click_elm, drag_elm, 'draggy color_red');
+  };
+  var blue_eval = function(drop_zone, click_elm, drag_elm) {
+    change_appr(click_elm, drag_elm, 'draggy color_blue');
+  };
+
+  AJS.dropZone('drop_red', {on_hover: red_eval});
+  AJS.dropZone('drop_blue', {on_hover: blue_eval});
+</script>
+
+		<script language="Javascript">
+
+		</script>
+		<script language="javascript1.1" src="http://www.twin-diamonds.com/indextools_ssl.js"></script>
+		<noscript>
+			<img src="http://stats.indextools.com/p.pl?a=10001017618097&amp;js=no" width="1" height="1"></noscript>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2363079-1";
+urchinTracker();
+</script>
+</body>
+</html>

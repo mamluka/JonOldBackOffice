@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extra>
+<schema text="Pendant Extra" id="1">
+<control type="literal" text="Weight"  ></control>
+<control type="textbox" key="weight" addspace="true"  width="30"></control>
+<control type="literal" text="Width:"></control>
+<control type="textbox" key="width"  addspace="true"  width="30" ></control>
+<control type="literal" text="Height:"></control>
+<control type="textbox" key="height" width="30" ></control>
+<control type="literal" text="Chain Metal:"></control>
+<control type="textbox" key="chainmetal" width="30" ></control>
+<control type="literal" text="Chain Length:"></control>
+<control type="textbox" key="chainlength" width="30" ></control>
+<control type="literal" text=" mm"></control>
+
+</schema>
+    
+    <schema text="Model Stone Info" id="2">
+       
+       
+      
+        <control type="literal" text="Center Stone Weight: "></control>
+        <control type="textbox" key="stoneweight" width="50" ></control>
+        <control type="literal" text=" Ct.  "></control>
+		  <control type="textbox" key="centerstonecount" width="50" ></control>
+        <control type="literal" text=" # of center stones "></control>		  
+        <control type="literal" text="Side Stone Weight: "></control>
+        <control type="textbox" key="sidestoneweight" width="50" ></control>
+        <control type="literal" text=" Ct.  "></control>
+		 <control type="textbox" key="sidestonescount" width="40" ></control>
+		    <control type="literal" text=" # of side stones "></control>
+        <control type="br"></control>
+        <control type="literal" text="Total Weight: "></control>
+        <control type="textbox" key="totalstoneweight" width="50" ></control>
+        <control type="literal" text=" Ct.  "></control>
+        <control type="br"></control>
+        <control type="literal" text="Measurements: "></control>
+        <control type="textbox" key="stonew" width="50"  addspace="true"></control>
+        <control type="literal" text="mm  "></control>
+        <control type="textbox" key="stoneh" width="50" addspace="true" ></control>
+        <control type="literal" text="mm  "></control>
+        <control type="textbox" key="stoned" width="50"  addspace="true"></control>
+        <control type="literal" text="mm  "></control>
+        <control type="br"></control>
+        <control type="literal" text="Color: "></control>
+        <control type="listbox" key="stonecolor" addspace="true"  width="200">
+            <item>D</item>
+            <item>E</item>
+            <item>F</item>
+            <item>G</item>
+            <item>H</item>
+            <item>I</item>
+            <item>J</item>
+            <item>K</item>
+            <item>M</item>
+            <item>N</item>
+			<item>Pigeon Blood Red</item>
+			<item>Strong Vivid Red</item>
+			<item>Medium Dark Red</item>
+			<item>Fine Royal Blue</item>
+			<item>Strong Vivid Blue</item>
+			<item>Medium Dark Blue</item>
+			<item>Medium Dark Blue</item>
+			<item>Fine Olive Green</item>
+			<item>Strong Vivid Green</item>
+			<item>Medium Dark Green</item>
+            <item>Fancy</item>
+            <item>Fancy Light Yellow</item>
+            <item>Fancy Yellow</item>
+            <item>Fancy Intense Yellow</item>
+            <item>Fancy Light Orange</item>
+            <item>Fancy Orange</item>
+            <item>Fancy Intense Orange</item>
+            <item>Fancy Light Pink</item>
+            <item>Fancy Pink</item>
+            <item>Fancy Intense Pink</item>
+            <item>Fancy Light Blue</item>
+            <item>Fancy Blue</item>
+            <item>Fancy Intence Blue</item>
+            <item>Fancy Light Green</item>
+            <item>Fancy Green</item>
+            <item>Fancy Intense Green</item>
+            <item>Fancy Light Brown</item>
+            <item>Fancy Brown</item>
+            <item>Fancy Intense Brown</item>
+            <item>Fancy Cognac</item>
+            <item>Fancy Champagne</item>
+            <item>Fancy (see note)</item>
+            <item>L</item>
+            
+        </control>
+        <control type="literal" text=" Free Text: "></control>
+        <control type="textbox" key="stonecolorfree" width="250"  addspace="true"></control>
+        <control type="br"></control>
+        <control type="literal" text="Clarity: "></control>
+        <control type="listbox" key="stoneclarity" addspace="true"  width="200">
+            <item>F</item>
+            <item>IF</item>
+            <item>VVS1</item>
+            <item>VVS2</item>
+            <item>VS1</item>
+            <item>VS2</item>
+            <item>SI1</item>
+            <item>SI2</item>
+            <item>SI3</item>
+            <item>I1</item>
+            <item>I2</item>
+            <item>I3</item>
+			<item>Eye clean - (VS)</item>
+            <item>Reject</item>
+            <item>IF (enhanced)</item>
+            <item>VVS1 (enhanced)</item>
+            <item>VVS2 (enhanced)</item>
+            <item>VS1 (enhanced)</item>
+            <item>VS2 (enhanced)</item>
+            <item>SI1 (enhanced)</item>
+            <item>SI2 (enhanced)</item>
+            
+        </control>
+        <control type="literal" text=" Free Text: "></control>
+        <control type="textbox" key="stoneclarityfree" width="250"  addspace="true"></control>
+		<control type="br"></control>
+        <control type="literal" text="Side Stone Color: "></control>
+        <control type="listbox" key="ssstonecolor" addspace="true"  width="200">
+            <item>D</item>
+            <item>E</item>
+            <item>F</item>
+            <item>G</item>
+            <item>H</item>
+            <item>I</item>
+            <item>J</item>
+            <item>K</item>
+            <item>M</item>
+            <item>N</item>
+            <item>Fancy</item>
+            <item>Fancy Light Yellow</item>
+            <item>Fancy Yellow</item>
+            <item>Fancy Intense Yellow</item>
+            <item>Fancy Light Orange</item>
+            <item>Fancy Orange</item>
+            <item>Fancy Intense Orange</item>
+            <item>Fancy Light Pink</item>
+            <item>Fancy Pink</item>
+            <item>Fancy Intense Pink</item>
+            <item>Fancy Light Blue</item>
+            <item>Fancy Blue</item>
+            <item>Fancy Intence Blue</item>
+            <item>Fancy Light Green</item>
+            <item>Fancy Green</item>
+            <item>Fancy Intense Green</item>
+            <item>Fancy Light Brown</item>
+            <item>Fancy Brown</item>
+            <item>Fancy Intense Brown</item>
+            <item>Fancy Cognac</item>
+            <item>Fancy Champagne</item>
+            <item>Fancy (see note)</item>
+            <item>L</item>
+            
+        </control>
+		
+		<control type="literal" text=" Free Text: "></control>
+        <control type="textbox" key="sscolorfree" width="250"  addspace="true"></control>
+        <control type="br"></control>
+		
+		 <control type="br"></control>
+        <control type="literal" text="Side Stone Clarity: "></control>
+        <control type="listbox" key="ssstoneclarity" addspace="true"  width="200">
+            <item>F</item>
+            <item>IF</item>
+            <item>VVS1</item>
+            <item>VVS2</item>
+            <item>VS1</item>
+            <item>VS2</item>
+            <item>SI1</item>
+            <item>SI2</item>
+            <item>SI3</item>
+            <item>I1</item>
+            <item>I2</item>
+            <item>I3</item>
+            <item>Reject</item>
+            <item>IF (enhanced)</item>
+            <item>VVS1 (enhanced)</item>
+            <item>VVS2 (enhanced)</item>
+            <item>VS1 (enhanced)</item>
+            <item>VS2 (enhanced)</item>
+            <item>SI1 (enhanced)</item>
+            <item>SI2 (enhanced)</item>
+            
+        </control>
+		<control type="literal" text=" Free Text: "></control>
+        <control type="textbox" key="ssclarityfree" width="250"  addspace="true"></control>
+        <control type="br"></control>
+        <control type="br"></control>
+		<control type="br"></control>
+		 <control type="check" key="defaultmodel" ></control>
+		   <control type="literal" text="Make this default model for this model set"></control>
+        
+        
+    </schema>
+
+</extra>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_rates" targetNamespace="http://tempuri.org/ds_rates.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_rates.xsd" xmlns:mstns="http://tempuri.org/ds_rates.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_rates" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="acc_RATES">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="name" type="xs:string" />
+							<xs:element name="code" type="xs:string" />
+							<xs:element name="value" type="xs:decimal" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_ratesKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:acc_RATES" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

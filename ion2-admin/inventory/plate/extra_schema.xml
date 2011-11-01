@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extra>
+<schema text="Center stone and Side stones" id="1">
+<control type="literal" text="Center stone: "></control>
+<control type="textbox" key="cs" addspace="true" ></control>
+<control type="literal" text="Side stones: "></control>
+<control type="textbox" key="ss"  addspace="true" ></control>
+<control type="literal" text=" - "></control>
+<control type="textbox" key="price" ></control>
+<control type="literal" text="$"></control>
+</schema>
+
+<schema text="Free Text (into Center Stone)" id="2">
+<control type="textbox" key="cs"></control>
+<control type="literal" text=" - "></control>
+<control type="textbox" key="price" ></control>
+<control type="literal" text="$"></control>
+</schema>
+
+<schema text="Center stone/Side Stone" id="3">
+<control type="textbox" key="cs" addspace="true" ></control>
+<control type="literal" text=" / "></control>
+<control type="textbox" key="ss"  addspace="true" ></control>
+<control type="literal" text=" - "></control>
+<control type="textbox" key="price" ></control>
+<control type="literal" text="$"></control>
+<control type="literal" text="^"></control>
+<control type="textbox" key="title" ></control>
+<control type="literal" text="^"></control>
+</schema>
+
+</extra>

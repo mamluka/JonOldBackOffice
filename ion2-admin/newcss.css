@@ -1,0 +1,12 @@
+.generic_text {
+	font-family: Tahoma, Verdana;
+	font-size: 11px;
+}
+input {
+	font-family: Tahoma, Verdana;
+	font-size: 11px;
+}
+.opration_table {
+	background-color: #CCCCCC;
+	border: 1px dotted #333333;
+}

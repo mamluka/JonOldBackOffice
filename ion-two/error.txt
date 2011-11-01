@@ -1,0 +1,12 @@
+ICRM Errors run from 7000
+
+
+
+Error	Source						Method		Description
+
+7001	cls_inventory_lgc.vb		insert		No plate number supplied.
+7002	cls_itemnumber							No Branch Number passed
+7003	cls_itemnumber							No Supplier Number passed
+7004	cls_itemnumber							No Item Number passed
+7005	cls_search:search_plate					No Plate number passed
+7006	cls_plate								No records returned

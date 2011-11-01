@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_agents" targetNamespace="http://tempuri.org/ds_AGENTS.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_AGENTS.xsd" xmlns:mstns="http://tempuri.org/ds_AGENTS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="ds_agents" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="log_AGENTS">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="sessionid" type="xs:string" minOccurs="0" />
+                            <xs:element name="date_time" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="refferer" type="xs:string" minOccurs="0" />
+                            <xs:element name="user_agent" type="xs:string" minOccurs="0" />
+                            <xs:element name="remote_ip" type="xs:string" minOccurs="0" />
+                            <xs:element name="spider_id" type="xs:int" minOccurs="0" />
+                            <xs:element name="lang" type="xs:string" minOccurs="0" />
+                            <xs:element name="remote_browser" type="xs:string" minOccurs="0" />
+                            <xs:element name="remote_name" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+        <xs:unique name="ds_agentsKey1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:log_AGENTS" />
+            <xs:field xpath="mstns:id" />
+        </xs:unique>
+    </xs:element>
+</xs:schema>

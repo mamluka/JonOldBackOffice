@@ -1,0 +1,370 @@
+<html>
+<head>
+<title>Frames Test</title>
+
+<link rel="stylesheet" type="text/css" href="frames.css">
+
+<script type="text/javascript" src="../../milonic_src.js"></script>
+<script type="text/javascript">
+if(ns4)_d.write("<scr"+"ipt type=text/javascript src=../../mmenuns4.js><\/scr"+"ipt>");
+  else _d.write("<scr"+"ipt type=text/javascript src=../../mmenudom.js><\/scr"+"ipt>");
+</script>
+
+<!--
+<script type="text/javascript" src="milonic_src.js"></script>
+<script type="text/javascript">
+if(ns4)_d.write("<scr"+"ipt type=text/javascript src=mmenuns4.js><\/scr"+"ipt>");
+  else _d.write("<scr"+"ipt type=text/javascript src=mmenudom.js><\/scr"+"ipt>");
+</script>
+-->
+
+<script type="text/javascript" src="menu_data_body.js"></script>
+
+</head>
+
+<body>
+
+<h1>body.htm in the "body" frame</h1>
+
+<p>
+This is a demonstration of using version 5 of Milonic DHTML Menus across standard frames (i.e., not iFrames).
+</p>
+
+<h2>The Frame Setup for this Sample</h2>
+
+<p>
+There are three frames in this example, meant to illustrate typical frame setups where navigation controls
+are in a top frame and/or a side frame; this example shows both.  Here, the "header" frame contains the
+file <span class="file">header.htm</span>, which holds the main menu at the top
+of the browser window.  The "side" frame contains the file side.htm, which holds the main menu shown
+at the left side of the browser window.  The "body" frame is meant to show your site's content; it currently
+holds the file body.htm, which is what you're reading right now.  Moreover, the "body" frame also contains
+the the Milonic base .js files &mdash; <span class="file">milonic_src.js</span>, <span class="file">mmenudom.js/mmenuns4.js</span>
+&mdash; along with standard "menu_data"
+definitions for the submenus; defined in a file called <span class="file">menu_data_body.js</span> for this example.  
+The frameset for the <span class="file">index.htm</span> file is defined as follows:
+</p>
+
+<pre><code>
+&lt;frameset framespacing="0" border="0" frameborder="0" rows="24,*">
+  &lt;frame name="header" scrolling="no" noresize src="header.htm">
+  &lt;frameset framespacing="0" border="0" frameborder="0" cols="129,99%">
+    &lt;frame name="side" scrolling="no" noresize src="side.htm">
+    &lt;frame name="body" src="body.htm">
+  &lt;/frameset>
+  &lt;noframes>
+    &lt;body>
+    &lt;p>This page uses frames, but your stone-aged browser doesn't support them.&lt;/p>
+    &lt;/body>
+  &lt;/noframes>
+&lt;/frameset>
+</code></pre>
+
+<h2>Why is this Approach Necessary for Frames?</h2>
+<p>
+Each frame holds its own HTML page.  A DHTML object, like a menu, only exists within the page
+where it is defined.  So, if you have all of your menus (main plus subs) in a navigation frame,
+then those menus can only be displayed in the navigation frame.  Since a dhtml object cannot
+occupy two frames at once, if the menu is too big to fit in the frame, it gets clipped
+("cut off") by the browser.
+</p>
+<p>
+The way to avoid clipping is to have your main menu in the navigation frame, and open your submenus
+in the <b><i>content</i></b> frame.
+</p>
+
+<h2>How this System Works</h2>
+<p>
+You have a main menu in a navigation frame that targets a content frame, where you will display your
+content.  If a main menu item opens a submenu, then the submenu will open in the <b><i>content</i></b>
+frame, not in the navigation frame.  The add-on module, <span class="file">mm_navframe.js</span>, does 
+the work: It figures out which submenu to open, figures out where in the content frame to open the 
+submenu, opens it, and then closes it when appropriate.
+</p>
+
+<h2>Design and Layout Considerations</h2>
+A main menu and its submenus open in different frames, but you do not want that fact to be obvious to
+the user.  You want the menuing system to appear as a seamless, visually unified menu. To achive
+that effect, you must address various design and layout issues.
+<p>
+<ul>
+<li><span class="listh">No Frame Borders.</span>&nbsp;
+Make sure that you turn your frame borders off (see
+the frameset code above).  With the borders off, there will be no visible demarcation between
+the main menu in the navigation frame and the submenu in the content frame.
+
+<p><li><span class="listh">No Frame Scrolling.</span>&nbsp;
+Turn scrolling off in your navigation frames (see the frameset code above).
+You wouldn't want your user to scroll the main menu out of sight!
+
+<p><li><span class="listh">No Frame Resizing.</span>&nbsp;
+Turn resizing off in your navigation frames (see the frameset code above).
+If your user could resize the navigation frame, it would spatially separate the main menu from its submenus.
+
+<p><li><span class="listh">Frame Layout.</span>&nbsp;
+Your navigation frame should be adjacent to your content frame, with no
+intervening frame.
+
+<p><li><span class="listh">Menu Placement.</span>&nbsp;
+In a standard cascading menu system, one side of the main menu "touches"
+one side of the first-level submenus that open from it.  For example, suppose you have a horizontal main
+menu at the top of the page, with vertical submenus that open beneath the main menu (like the menu at the
+top of this page).  In that case, the bottom of the main menu is adjacent to the tops of the first-level
+submenus. To present a visually unified menu system that works across frames, you should place the
+main menu in the navigation frame so that the side from which its submenus open touches the border between
+the navigation frame and the content frame where the submenus will open.
+</ul>
+</p>
+
+
+
+
+<h2>Instructions</h2>
+The following instruction tell you what you need to do to make the system work.
+
+<ol type="1" start="1">
+<p><li><span class="listh">Define your Main Menu and your Submenus Separately.</span>&nbsp;
+In this system, the main menu code and the submenu code must be defined separately, because they are loaded
+into separate pages; the main menu in the navigation frame and the submenus in the content frame.
+In this sample, we have <b><i>two</i></b> main menus, one for the "header" frame and one for the "side" frame.
+Each of these main menus is defined in its own file; the main menu in the "header" frame is defined in
+<span class="file">menu_data_header.js</span>, while the main menu in the "side" frame is defined in
+<span class="file">menu_data_side.js</span>.  The submenus, destined to appear in the content frame, are defined
+in a third file, called <span class="file">menu_data_body.js</span>.
+
+
+
+
+<p><li><span class="listh">Coding a Main Menu.</span>&nbsp;
+Each main menu file should contain the menu style code and aI() item definitions for its respective
+main menu; you do <b><i>not</i></b> define submenus or submenu styles in these files.
+
+<ol type="a" start="a">
+<p><li><span class="listh">Menu Styles.</span>&nbsp;
+Menu styles are <b><i>not</i></b> affected by the fact that the menu is in a frame, so define the menu style code
+for the main menu just as you would any other menu.
+
+<p><li><span class="listh">Menu Items.</span>&nbsp;
+The main consideration in coding the main menu is the coding
+for the menu items; i.e., the aI() strings.  How you code an item's aI() string depends on what you want
+to do with that particular menu item. The following examples show how to code a menu item's aI() string
+for various common tasks. For the most part, the aI() coding is the same
+as with any other Milonic Menu system, with one exception: items that open a submenu must include
+the <span class="var">onfunction</span> and <span class="var">offfunction</span> menu item properties, and those properties must be
+set <b><i>exactly</i></b> as shown in the examples below.
+
+<ol type="i" start="i">
+<p><li><span class="listh">An Item that Opens a Submenu (no link).</span>&nbsp;
+An item that opens a submenu should be coded as follows:
+<pre><code>
+aI("text=itemText;showmenu=submenuName;target=contentFrame;onfunction=openSubmenu();offfunction=closeSubmenu();");
+</code></pre>
+where <span class="var">itemText</span> is the text that you want to appear in the menu item,
+<span class="var">submenuName</span> is the name of the submenu you want to open,
+and <span class="var">contentFrame</span> is the name of the frame where you want the submenu to appear.
+The <span class="var">onfunction</span> and <span class="var">offfunction</span> properties must be set <b><i>exactly</i></b> as shown in the code above.
+
+<p><li><span class="listh">An Item that Opens a Page in the Content Frame (no submenu).</span>&nbsp;
+An item that opens a page in the content frame should be coded as follows:
+<pre><code>
+aI("text=itemText;url=theUrlToOpen.htm;target=contentFrame;");
+</code></pre>
+where <span class="var">itemText</span> is the text that you want to appear in the menu item,
+<span class="var">theUrlToOpen</span> is the href to the url that you want to open,
+and <span class="var">contentFrame</span> is the name of the frame where you want the new page to appear.
+
+<p><li><span class="listh">An Item that Opens a Submenu <i>and</i> Links to a New Page.</span>&nbsp;
+An item that opens a submenu when moused over, or links to a new page when clicked should be coded as follows:
+<pre><code>
+aI("text=itemText;showmenu=submenuName;url=theUrlToOpen.htm;target=contentFrame;onfunction=openSubmenu();offfunction=closeSubmenu();");
+</code></pre>
+where <span class="var">itemText</span> is the text that you want to appear in the menu item,
+<span class="var">submenuName</span> is the name of the submenu you want to open,
+<span class="var">theUrlToOpen</span> is the href to the url that you want to open,
+and <span class="var">contentFrame</span> is the name of the frame where you want the submenu to appear when the item is moused over, or
+the new page to appear when the item is clicked.
+The <span class="var">onfunction</span> and <span class="var">offfunction</span> properties must be set <b><i>exactly</i></b> as shown in the code above.
+
+<p><li><span class="listh">An Item that Opens a Page in a New Window.</span>&nbsp;
+You can have main menu items that open a page in a new window.  Such an item would be coded the same way as you would
+if you were not using frames.
+<pre><code>
+aI("text=itemText;url=theUrlToOpen.htm;target=_new;");
+</code></pre>
+where <span class="var">itemText</span> is the text that you want to appear in the menu item,
+<span class="var">theUrlToOpen</span> is the href to the url that you want to open,
+and <span class="var">_new</span> causes the url to open in a new page.
+
+<p><li><span class="listh">An Item that Opens a Submenu and Links to a New Page <i>in a New Window</i>.</span>&nbsp;
+OK... so you want it all.  This can be done, but not within the scope of this system.  To
+do this, you'd need to open the url in a new window using a custom javascript function that you'd call
+with the item's <span class="var">clickfunction</span> property.  Why?  Because you cannot set two <span class="var">target</span> properties in one
+aI() string.  If you really want to do this, post a question in the Milonic v5.0 Help Forum and I'll help you.
+
+</ol>
+
+<p><li><span class="listh">Offsets for Submenus.</span>&nbsp;
+Using menus across frames intruduces some positioning issues that you do not face in a non-framed site.
+We have to compensate for any positional offsets that are introduced by the frames themselves.
+Depending on your frame layout, you may have to apply some positional offsets to make the submenus
+open in the correct spot. You can adjust the location of where a main menu's submenus open by setting the
+standard global properties, <span class="var">_subOffsetTop</span> and <span class="var">_subOffsetLeft</span>, in the menu_data code for the main
+menu in question.
+
+<p>For example, the "side" frame in this sample is 130 pixels wide, but the
+"header" frame occupies 100% of the browser window's width.  This essnetially pushes the "body"
+frame 130 pixels to the right.  As a result, without an adjustment, a submenu opened from the main
+menu in the "header" frame would open 130 pixels too far to the right.  To compensate,
+<span class="var">_subOffsetLeft</span> is set to <span class="var">-130</span> in
+<span class="file">menu_data_header.js</span>, where the main menu in the "header" frame is defined.
+Note that negative values offset to the left, positive values offset to the right, and a 0 does nothing.
+
+<p class="note">Setting <span class="var">_subOffsetTop</span> and <span class="var">_subOffsetLeft</span> in
+a main menu's javascript code (e.g., in <span class="file">menu_data_header.js</span>) only affects
+first-level submenus.  Second-level submenus (sub-submenus) and higher derive their offsets from the
+<span class="var">_subOffsetTop</span> and <span class="var">_subOffsetLeft</span> settings in the
+javascript code for the submenus (e.g., <span class="file">menu_data_body.js</span>).
+
+<p><li><span class="listh">Delays.</span>&nbsp;
+With the framed approach, the standard global properties, <span class="var">_menuOpenDelay</span> and
+<span class="var">_menuCloseDelay</span>, have no effect in the code for a main menu.  Even though they
+have no effect, these properties must still be defined in the main menu code (e.g., set them to 0) so
+that you don't get " variable is undefined" errors.
+
+</ol>
+
+
+
+
+<p><li><span class="listh">Coding the Submenus.</span>&nbsp;
+Define your submenu styles and aI() items separately from the main menu (i.e., in a separate file).
+In this sample, the submenus that appear in the "body" frame, are defined in a separate file
+named <span class="file">menu_data_body.js</span>.  The file for the submenu definitions should
+contain the menu style code and the aI() item definitions for submenus only; you do
+<b><i>not</i></b> define main menu styles or items in this file.  There are no special, frame-related
+considerations for coding the menu styles and menu items; code them as you would in any non-framed
+Milonic Menuing system.
+
+
+
+
+<p><li><span class="listh">Loading the .js Files into your Pages.</span>&nbsp;
+So... no you have all of your menus coded an in their separate files.  Where do you load them?  Some files
+are loaded into the navigation frame, some are loaded into the content frame, and some are loaded into both.
+
+<ol type="a" start="a">
+<p><li><span class="listh">Files to Load into a Navigation Frame.</span>&nbsp;
+The main menu resides in the navigation frame.  The page that you put in the navigation frame must therefore
+load all of the javascript code that defines your main menu and makes it run.  This code includes <b>(a)</b> the
+base Miloinic menu code, <b>(b)</b> the menu_data code that defines your main menu, and
+<b>(c)</b> the <span class="file">mm_navframe.js</span> module.
+
+<ol type="i" start="i">
+<p><li><span class="listh">Load the Base Milonic Script Files.</span>&nbsp;
+Your navigation frame, which will contain your main menu, must contain the standard javascript code for loading
+the Milonic base scripts (<span class="file">milonc_src.js</span> and <span class="file">mmenudom.js/mmenns4.js</span>).
+
+<p><li><span class="listh">Load the menu_data_xxxx.js File that Defines your Main Menu.</span>&nbsp;
+After loading the base Milonic script files, you will load the <span class="file">menu_data_xxxx.js</span>
+file where you defined the main menu that you want to have in this particular navigation frame.
+
+<p><li><span class="listh">Load the mm_navframe.js File.</span>&nbsp;
+After loading your menu_data file, you will load the <span class="file">mm_navframe.js</span> file that you
+got along with this sample. The <span class="file">mm_navframe.js</span> file contains the code that lets the
+menus work across frames.  The file does not contain user-editable code, so <b><i>do not edit</i></b> the
+<span class="file">mm_navframe.js</span> file.
+
+</ol>
+
+<p>The code that you use to load all of this stuff into your navigation frame is fairly standard code.  In this
+sample, the <span class="file">header.htm</span> file contains the following code, which is used to load the
+.js files needed to place a main menu in the "header" frame.
+</p>
+
+<pre><code>
+&lt;script type="text/javascript" src="../../milonic_src.js">&lt;/script>
+&lt;script type="text/javascript">
+if(ns4)_d.write("&lt;scr"+"ipt type=text/javascript src=../../mmenuns4.js>&lt;\/scr"+"ipt>");
+  else _d.write("&lt;scr"+"ipt type=text/javascript src=../../mmenudom.js>&lt;\/scr"+"ipt>");
+&lt;/script>
+&lt;script type="text/javascript" src="menu_data_header.js">&lt;/script>
+&lt;script type="text/javascript" src="mm_navframe.js">&lt;/script>
+</code></pre>
+
+<br>
+<p>Line 1 of the above code loads one of the base scripts: milonic_src.js.  Lines 2 through 5 of the above code
+load the remaining base script: either mmenudom.js or mmenns4.js, depending on the browser that is being
+used.  Line 6 of the above code loads <span class="file">menu_data_header.js</span>, which contains the
+definitions for the main menu to be displayed in the "header" frame.  Line 7 of the above code loads the
+<span class="file">mm_navframe.js</span> module.
+
+<p class="note">
+<b>Directory Paths.</b>  When loading the .js file, your would of course adjust the
+paths shown in the &lt;script&gt; tags above, to relect your own site's directory structure.
+</p>
+
+
+
+
+<p><li><span class="listh">Files to Load into the Content (Body) Frame.</span>&nbsp;
+The submenus reside in the content frame.  Any page that you put in the content frame must therefore
+load all of the javascript code that defines your sumenus and makes them run.  This code includes <b>(a)</b> the
+base Miloinic menu code and <b>(b)</b> the menu_data code that defines your submenus.
+
+<ol type="i" start="i">
+<p><li><span class="listh">Load the Base Milonic Script Files.</span>&nbsp;
+Your content frame, which will contain your submenus, must contain the standard javascript code for loading
+the Milonic base scripts (<span class="file">milonc_src.js</span> and <span class="file">mmenudom.js/mmenns4.js</span>).
+
+<p><li><span class="listh">Load the menu_data_xxxx.js File that Defines your Submenus.</span>&nbsp;
+After loading the base Milonic script files, you will load the <span class="file">menu_data_xxxx.js</span>
+file where you defined your submenus.
+
+</ol>
+
+<p>In this sample, the <span class="file">body.htm</span> file contains the following code, which
+is used to load the .js files needed to have submenus in the "body" frame.
+</p>
+
+<pre><code>
+&lt;script type="text/javascript" src="../../milonic_src.js">&lt;/script>
+&lt;script type="text/javascript">
+if(ns4)_d.write("&lt;scr"+"ipt type=text/javascript src=../../mmenuns4.js>&lt;\/scr"+"ipt>");
+  else _d.write("&lt;scr"+"ipt type=text/javascript src=../../mmenudom.js>&lt;\/scr"+"ipt>");
+&lt;/script>
+&lt;script type="text/javascript" src="menu_data_body.js">&lt;/script>
+</code></pre>
+
+</ol>
+</ol>
+
+<h2>Examine this Sample</h2>
+If you don't quite understand all of the instructions, compare them against this working sample.
+Examine the .htm files to see how the frames are set up and how each page in its own frame loads
+the files needed to make the menus work.  Look at the menu_data_xxxx.js files to see which menus
+are defined where, and how they're defined.  If you still have questions, feel free to visit the
+v5.0 Help Forums and ask for help
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+<a href=http://www.milonic.com/>JavaScript Menu Courtesy of Milonic.com</a>
+<br>
+<a href=mm_frames.zip>Download a zipped version</a> of this sample.
+
+		<script language="Javascript">
+
+		</script>
+		<script language="javascript1.1" src="http://www.twin-diamonds.com/indextools_ssl.js"></script>
+		<noscript>
+			<img src="http://stats.indextools.com/p.pl?a=10001017618097&amp;js=no" width="1" height="1"></noscript>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2363079-1";
+urchinTracker();
+</script>
+</body>
+</html>

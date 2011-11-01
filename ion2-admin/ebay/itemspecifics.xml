@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemspecifics>
+    <rule plate="1" >
+        <itemspecifics name="Item Number" type="plate">|_itemnumber:::0|</itemspecifics>
+        <itemspecifics name="Cut" type="plate">|subplate._shape:::-|</itemspecifics>
+        <itemspecifics name="Type" type="plate">|subplate._stonetype:::-|</itemspecifics>
+        <itemspecifics name="Weight" type="plate">|subplate._s_weight:::0|</itemspecifics>
+        <itemspecifics name="Color" type="plate">|subplate._colorfrom:::-|</itemspecifics>
+        <itemspecifics name="Clarity" type="plate">|subplate._clarityfrom:::-|</itemspecifics>
+        <itemspecifics name="Report" type="plate">|subplate._report:::-|</itemspecifics>
+      
+        
+    </rule>
+    <rule plate="2" >
+        <itemspecifics name="Item Number" type="plate">|_itemnumber:::0|</itemspecifics>
+		<itemspecifics name="Condition" type="plate">New</itemspecifics>
+        <itemspecifics name="Cut" type="plate">|subplate._shape:::-|</itemspecifics>
+        <itemspecifics name="Stone Type" type="plate">Natural |subplate._stonetype:::-|</itemspecifics>
+        <itemspecifics name="Weight" type="plate">|subplate._s_weight:::0|</itemspecifics>
+        <itemspecifics name="Color" type="plate">|subplate._colorfrom:::-|</itemspecifics>
+        <itemspecifics name="Origin" type="plate">|subplate._origin:::-|</itemspecifics>
+        <itemspecifics name="Report" type="plate">|subplate._report:::-|</itemspecifics>
+       <!-- <itemspecifics name="General Grade" type="plate">|subplate._grade:::-|</itemspecifics>-->
+    </rule>
+    
+    <rule plate="3" >
+        <itemspecifics name="Item Number" type="plate">|_itemnumber:::0|</itemspecifics>
+        <itemspecifics name="Metal" type="plate">|subplate._metal:::-|</itemspecifics>
+        <itemspecifics name="Weight" type="plate">|subplate._s_weight:::0|</itemspecifics>
+        <itemspecifics name="Center Stone" type="plate">|subplate._middlestone:::-|</itemspecifics>
+        <itemspecifics name="Setting" type="plate">|subplate._setting:::-|</itemspecifics>
+    </rule>
+    
+    
+</itemspecifics>

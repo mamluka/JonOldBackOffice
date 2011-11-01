@@ -1,0 +1,974 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0BDA706-F613-460E-9152-D0E623D464CA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ion-two</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>ion_two</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ion-two.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ion-two.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="auction\cls_auction.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_categories.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_config.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_connection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_defaults.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_defaults_listings.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_defaults_search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_mail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_page_history.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_pictures.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_reject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_search_library.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_stone_ext.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="foundation\cls_user.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_ajax_cs_tablemember.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_ajax_makestrings.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_ajax_maketable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_custom_earrings_diamond_skl.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_custom_eattings_diamond_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_custom_jewel_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_custom_jewel_main.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_custom_jewel_skl.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_jeweleye.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_live_search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_stonesphere.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_stone_exchange.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\cls_tab_info.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jewel-design\dataset\ds_custom_jewel.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_custom_jewel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="library\cls_mailing.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\cls_net_reject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\cls_next_back_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\cls_notes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\cls_seo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_actual_sample_exclude.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_CJ_cart.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_extra_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_gemstone.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_gem_color.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_mod_diam_pairs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_mod_images.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_mod_mail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_mod_metal.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_mod_setting.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_setting.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_setting_metal_atom.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_shape.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_size_atom.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_ss_match.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\cls_stone_extended_atom.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\items\cls_mod_ce_diam_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\items\cls_mod_diam_pair_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\items\cls_mod_exta_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\items\cls_mod_extra_stone.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\items\cls_mod_generic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\items\cls_mod_setting_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\items\cls_mod_SE_ring_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\items\cls_mod_SE_stone_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mod\items\cls_mod_stonestripitem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="newdesign\cls_before_search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_browsers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_catalog_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_currency.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_database_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_dyn_scripts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_groups.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_idex.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_jd_session.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_jeweldesign.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_mills_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_models.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_modular_description.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_modular_seo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_mod_catalog_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_nd_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_nd_q4.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_nd_ucxml.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_nd_xmlread.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_nd_xmlwrite.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_newdesign.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_pathbar.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_purchase_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_redcombo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_stonestrip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_viewer_catalog_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_viewer_lgk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_viewer_urldecode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_wishlist.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\cls_wordpart_talkback.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newdesign\usr_currency.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>usr_currency.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="newdesign\usr_wishlist.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>usr_wishlist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="newoffice\cls_alibaba.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_dhtmlgrid.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_diamond_importer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_ebay_sync.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_google_products.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_prostore.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_sharesale.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_shopping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_sortprice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_us_products.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newoffice\cls_webidz.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="suppliers\cls_functions_suppliers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="suppliers\cls_supplier_no.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\accounting\cls_books_general_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\accounting\cls_books_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\accounting\cls_books_suppliers_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\accounting\cls_functions_accounting.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\accounting\ds_books_general.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_books_general.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\accounting\ds_books_suppliers.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_books_suppliers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\accounting\skl_books_general.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\accounting\skl_books_suppliers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\box\cls_box_items_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\box\cls_box_master_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\box\cls_functions_box.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\box\ds_box_items.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_box_items.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\box\ds_box_master.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_box_master.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\box\skl_box_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\box\skl_box_master.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\box\skl_box_stoneshape.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\box\skl_box_stonetype.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\cashflow\cls_cashflow_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\cashflow\cls_functions_cashflow.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\cashflow\cls_payment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\cashflow\cls_payment_calc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\cashflow\cls_webpayment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\cashflow\ds_cashflow.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_cashflow.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\cashflow\skl_cashflow.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\counters\cls_syscounters_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\customers\cls_customers_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\customers\cls_functions_user.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\customers\cls_session.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\customers\ds_customer.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_customer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\customers\skl_customers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\feedbacks\cls_feedbacks_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\feedbacks\ds_feedbacks.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_feedbacks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\feedbacks\skl_feedbacks.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\cls_functions_inventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\cls_inventory_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\cls_itemnumber.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\cls_listitem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\cls_measurement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\cls_plate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\cons_description.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\cons_price.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\diamonds\cls_diamond_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\diamonds\cls_diam_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\diamonds\cls_diam_quality.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\diamonds\cls_diam_size.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\diamonds\ds_diamonds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_diamonds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\inventory\diamonds\skl_diamond.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\diamonds\skl_lst_diamond.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\ds_inventory.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_inventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\inventory\gemstones\cls_gemstone_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\gemstones\ds_gemstones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_gemstones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\inventory\gemstones\skl_gemstone.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\gemstones\skl_lst_gemstone.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\jewelry\cls_jewelry_extra.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\jewelry\cls_jewelry_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\jewelry\cls_jewel_extended_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\jewelry\ds_jewelry.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_jewelry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\inventory\jewelry\ds_jewel_extended.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_jewel_extended.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\inventory\jewelry\skl_jewelry.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\jewelry\skl_jewel_extended.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\jewelry\skl_lst_jewelry.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_fulltxt_search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search_general_active.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search_general_categories.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search_general_measure.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search_general_price.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search_general_special.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search_general_weight.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search_keywords.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search_plate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\cls_search_smartsort.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\library\cls_search_library_all.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\library\cls_search_library_diamonds.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\library\cls_search_library_emeralds.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\library\cls_search_library_fancy_diamonds.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\library\cls_search_library_jewelry.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\library\cls_search_library_rubies.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\library\cls_search_library_sapphires.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\search\library\cls_search_library_semi_precious.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\skl_inventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\inventory\skl_lst_inventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_advanced_cart.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_creditcard.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_functions_orders.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_idex.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_order_items_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_order_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_order_totals.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_payment_manager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_shipping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_shopping_cart.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\cls_status.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\ds_order.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_order.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\orders\ds_order.vb">
+      <DependentUpon>ds_order.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\orders\ds_order_items.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_order_items.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\orders\ds_order_items.vb">
+      <DependentUpon>ds_order_items.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\orders\rates\cls_rates.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\rates\cls_rates_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\rates\ds_rates.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_rates.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tables\orders\rates\skl_lst_rates.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\rates\skl_rates.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\skl_order.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\skl_order_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\orders\skl_order_item_amounts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\specials\cls_10best_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tables\specials\skl_10best.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="error.txt" />
+    <Content Include="jewel-design\dataset\ds_custom_jewel.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_custom_jewel.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="newdesign\usr_currency.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>usr_currency.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="newdesign\usr_wishlist.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>usr_wishlist.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\accounting\ds_books_general.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_books_general.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\accounting\ds_books_suppliers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_books_suppliers.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\box\ds_box_items.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_box_items.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\box\ds_box_master.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_box_master.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\cashflow\ds_cashflow.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_cashflow.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\customers\ds_customer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_customer.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\feedbacks\ds_feedbacks.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_feedbacks.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\inventory\diamonds\ds_diamonds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_diamonds.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\inventory\ds_inventory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_inventory.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\inventory\gemstones\ds_gemstones.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_gemstones.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\inventory\jewelry\ds_jewelry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_jewelry.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\inventory\jewelry\ds_jewel_extended.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_jewel_extended.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\orders\ds_order.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_order.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\orders\ds_order_items.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_order_items.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="tables\orders\rates\ds_rates.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_rates.Designer.vb</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="jewel-design\cls_custom_jewel_lgk.resx">
+      <DependentUpon>cls_custom_jewel_lgk.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="jewel-design\dataset\ds_custom_jewel.xsx">
+      <DependentUpon>ds_custom_jewel.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="newdesign\usr_currency.xsx">
+      <DependentUpon>usr_currency.xsd</DependentUpon>
+    </None>
+    <None Include="newdesign\usr_wishlist.xsx">
+      <DependentUpon>usr_wishlist.xsd</DependentUpon>
+    </None>
+    <None Include="tables\accounting\ds_books_general.xsx">
+      <DependentUpon>ds_books_general.xsd</DependentUpon>
+    </None>
+    <None Include="tables\accounting\ds_books_suppliers.xsx">
+      <DependentUpon>ds_books_suppliers.xsd</DependentUpon>
+    </None>
+    <None Include="tables\box\ds_box_items.xsx">
+      <DependentUpon>ds_box_items.xsd</DependentUpon>
+    </None>
+    <None Include="tables\box\ds_box_master.xsx">
+      <DependentUpon>ds_box_master.xsd</DependentUpon>
+    </None>
+    <None Include="tables\cashflow\ds_cashflow.xsx">
+      <DependentUpon>ds_cashflow.xsd</DependentUpon>
+    </None>
+    <None Include="tables\customers\ds_customer.xsx">
+      <DependentUpon>ds_customer.xsd</DependentUpon>
+    </None>
+    <None Include="tables\feedbacks\ds_feedbacks.xsx">
+      <DependentUpon>ds_feedbacks.xsd</DependentUpon>
+    </None>
+    <None Include="tables\inventory\diamonds\ds_diamonds.xsx">
+      <DependentUpon>ds_diamonds.xsd</DependentUpon>
+    </None>
+    <None Include="tables\inventory\ds_inventory.xsc">
+      <DependentUpon>ds_inventory.xsd</DependentUpon>
+    </None>
+    <None Include="tables\inventory\ds_inventory.xss">
+      <DependentUpon>ds_inventory.xsd</DependentUpon>
+    </None>
+    <None Include="tables\inventory\ds_inventory.xsx">
+      <DependentUpon>ds_inventory.xsd</DependentUpon>
+    </None>
+    <None Include="tables\inventory\gemstones\ds_gemstones.xsx">
+      <DependentUpon>ds_gemstones.xsd</DependentUpon>
+    </None>
+    <None Include="tables\inventory\jewelry\ds_jewelry.xsx">
+      <DependentUpon>ds_jewelry.xsd</DependentUpon>
+    </None>
+    <None Include="tables\inventory\jewelry\ds_jewel_extended.xsc">
+      <DependentUpon>ds_jewel_extended.xsd</DependentUpon>
+    </None>
+    <None Include="tables\inventory\jewelry\ds_jewel_extended.xss">
+      <DependentUpon>ds_jewel_extended.xsd</DependentUpon>
+    </None>
+    <None Include="tables\inventory\jewelry\ds_jewel_extended.xsx">
+      <DependentUpon>ds_jewel_extended.xsd</DependentUpon>
+    </None>
+    <None Include="tables\orders\ds_order.xsc">
+      <DependentUpon>ds_order.xsd</DependentUpon>
+    </None>
+    <None Include="tables\orders\ds_order.xss">
+      <DependentUpon>ds_order.xsd</DependentUpon>
+    </None>
+    <None Include="tables\orders\ds_order.xsx">
+      <DependentUpon>ds_order.xsd</DependentUpon>
+    </None>
+    <None Include="tables\orders\ds_order_items.xsc">
+      <DependentUpon>ds_order_items.xsd</DependentUpon>
+    </None>
+    <None Include="tables\orders\ds_order_items.xss">
+      <DependentUpon>ds_order_items.xsd</DependentUpon>
+    </None>
+    <None Include="tables\orders\ds_order_items.xsx">
+      <DependentUpon>ds_order_items.xsd</DependentUpon>
+    </None>
+    <None Include="tables\orders\rates\ds_rates.xsx">
+      <DependentUpon>ds_rates.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iDAC\v3\iDac.vbproj">
+      <Project>{5E2F0518-8FD0-43E9-8459-A6DC5358F691}</Project>
+      <Name>iDac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iFoundation\v3\iFoundation.vbproj">
+      <Project>{DA8EA39F-B6E5-4767-A311-666E14467F51}</Project>
+      <Name>iFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iFunctions\v3\iFunctions.vbproj">
+      <Project>{71B53278-AE23-4F49-ACB7-6A07ED69021C}</Project>
+      <Name>iFunctions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iLogging\v3\iLogging.vbproj">
+      <Project>{6FA6098C-C87C-421A-BD81-A2FF5B0307A1}</Project>
+      <Name>iLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ion-idac\ion-idac.vbproj">
+      <Project>{D5D6FF19-6311-4451-BDCE-98B610E16408}</Project>
+      <Name>ion-idac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\wordline25\WordLine\WordLine.vbproj">
+      <Project>{AFA3D793-2C38-477A-9989-8260A8C62A39}</Project>
+      <Name>WordLine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

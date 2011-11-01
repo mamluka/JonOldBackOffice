@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ds_feedbacks" targetNamespace="http://tempuri.org/ds_feedbacks.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_feedbacks.xsd" xmlns:mstns="http://tempuri.org/ds_feedbacks.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ds_feedbacks" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="usr_NEW_FEEDBACK">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="item_id" type="xs:int" minOccurs="0" />
+							<xs:element name="platetype" type="xs:int" minOccurs="0" />
+							<xs:element name="name" type="xs:string" minOccurs="0" />
+							<xs:element name="title" type="xs:string" minOccurs="0" />
+							<xs:element name="text" type="xs:string" minOccurs="0" />
+							<xs:element name="country" type="xs:int" minOccurs="0" />
+							<xs:element name="textdate" type="xs:string" minOccurs="0" />
+							<xs:element name="rating" type="xs:decimal" minOccurs="0" />
+							<xs:element name="adddate" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ds_feedbacksKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:usr_NEW_FEEDBACK" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

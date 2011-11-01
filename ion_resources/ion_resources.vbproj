@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C6BC527-5C58-421C-B6C8-A1B3909B74D8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>ion_resources</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>ion_resources</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ion_resources.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ion_resources.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB">
+      <Name>adodb</Name>
+      <HintPath>..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accounting\books\cls_books_brk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\books\cls_books_cll.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\books\cls_books_general.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\books\cls_books_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\books\cls_books_suppliers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\books\cls_functions_book.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\books\cls_trs_insert_books.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\books\ds_books.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_books.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\checkbooks\cls_checkbook.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\checkbooks\cls_checkbook_brk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\checkbooks\cls_checkbook_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\checkbooks\cls_trs_insert_checkbook.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\checkbooks\cls_trs_update_checkbook.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\checkbooks\ds_checkbook.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_checkbook.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="accounting\payment\cls_functions_payment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\payment\cls_payment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\payment\cls_payment_brk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\payment\cls_payment_calc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\payment\cls_payment_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\payment\cls_trs_insert_payment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\payment\cls_trs_update_payment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\payment\cls_webpay.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="accounting\payment\ds_cashflow.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_cashflow.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="components\cls_combo.vb" />
+    <Compile Include="components\cls_config.vb" />
+    <Compile Include="components\cls_datareader.vb" />
+    <Compile Include="components\cls_defaults.vb" />
+    <Compile Include="components\cls_error.vb" />
+    <Compile Include="components\cls_garbage.vb" />
+    <Compile Include="components\cls_message.vb" />
+    <Compile Include="components\cls_user.vb" />
+    <Compile Include="customers\cls_customer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="customers\cls_customer_brk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="customers\cls_customer_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="customers\cls_functions_customers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="customers\cls_get_countrystate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="customers\cls_trs_insert_customer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="customers\cls_trs_update_customer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="customers\ds_customers.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_customers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="datasets\ds_twin_mailing.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_twin_mailing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="feedbacks\cls_feedback.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feedbacks\cls_feedbacks_brk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feedbacks\cls_feedbacks_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feedbacks\cls_functions_accounting.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feedbacks\cls_trs_insert_feedbacks.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feedbacks\cls_trs_update_feedbacks.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feedbacks\ds_feedbacks.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_feedbacks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\ads\cls_banners.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\ads\cls_functions_gallery.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\ads\cls_marketplace.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\ads\cls_seealso.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_category.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_cons_description.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_cons_itemprice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_cons_price.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_formatitemnumber.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_functions_inventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_inv_search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_itemnumber.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_measurement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_quick_search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_resolve_plate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\cls_search_inventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\plate\cls_getitem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\plate\cls_ion_plate_brk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\plate\cls_ion_plate_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventory\plate\ds_plate_diamonds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_plate_diamonds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\plate\ds_plate_gemstones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_plate_gemstones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\plate\ds_plate_jewelry.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_plate_jewelry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\plate\ds_plate_main.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_plate_main.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="library\cls_readconfig.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\cls_readHTM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\cls_SAMPLE.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\cls_SEO.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\cls_system.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\ds_syscounters.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_syscounters.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="library\logging\cls_logging.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\logging\ds_log_ERRORLOG.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_log_ERRORLOG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="library\loose-functions\cls_date.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\loose-functions\cls_dns.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\loose-functions\cls_interest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\loose-functions\cls_string.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\mail\cls_export_mail_list.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\mail\cls_mail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\mail\cls_simplemail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\transactor\cls_db_broker.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\transactor\cls_transactor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="library\transactor\cls_trs_tables.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="new\agent-logging\cls_agents.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\agent-logging\cls_agents_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\agent-logging\ds_agents.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_agents.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="new\base-classes\cls_base_brk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\base-classes\cls_base_entity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\base-classes\cls_base_general.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\base-classes\cls_base_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\base-classes\cls_base_transactor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\cls_dates.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\help\cls_help.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\help\cls_help_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\help\ds_help.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_help.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="new\serverstats\cls_serverstats.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\serverstats\cls_serverstats_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\serverstats\ds_serverstats.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_serverstats.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="new\session-logging\cls_functions_slogging.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\session-logging\cls_slogging.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\session-logging\cls_slogging_brk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\session-logging\cls_slogging_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="new\session-logging\ds_slogging.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_slogging.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="orders\cls_cart.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_functions_order.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_jewelry_extra.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_mt_orders.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_order.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_order_brk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_order_lgc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_order_totals.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_ord_search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_status.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_trs_insert_order.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\cls_trs_update_order.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="orders\ds_orders.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_orders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rates\cls_rates.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="suppliers\cls_functions_suppliers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="accounting\books\ds_books.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_books.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="accounting\checkbooks\ds_checkbook.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_checkbook.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="accounting\payment\ds_cashflow.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_cashflow.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="components\Zip.dll" />
+    <Content Include="customers\ds_customers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_customers.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="datasets\ds_twin_mailing.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_twin_mailing.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="errors.txt" />
+    <Content Include="feedbacks\ds_feedbacks.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_feedbacks.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="inventory\plate\ds_plate_diamonds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_plate_diamonds.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="inventory\plate\ds_plate_gemstones.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_plate_gemstones.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="inventory\plate\ds_plate_jewelry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_plate_jewelry.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="inventory\plate\ds_plate_main.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_plate_main.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="library\ds_syscounters.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_syscounters.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="library\logging\ds_log_ERRORLOG.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_log_ERRORLOG.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="new\agent-logging\ds_agents.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_agents.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="new\help\ds_help.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_help.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="new\serverstats\ds_serverstats.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_serverstats.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="new\session-logging\ds_slogging.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_slogging.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="orders\ds_orders.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_orders.Designer.vb</LastGenOutput>
+    </Content>
+    <None Include="accounting\books\ds_books.xsx">
+      <DependentUpon>ds_books.xsd</DependentUpon>
+    </None>
+    <None Include="accounting\checkbooks\ds_checkbook.xsx">
+      <DependentUpon>ds_checkbook.xsd</DependentUpon>
+    </None>
+    <None Include="accounting\payment\ds_cashflow.xsx">
+      <DependentUpon>ds_cashflow.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="customers\ds_customers.xsx">
+      <DependentUpon>ds_customers.xsd</DependentUpon>
+    </None>
+    <None Include="datasets\ds_twin_mailing.xsx">
+      <DependentUpon>ds_twin_mailing.xsd</DependentUpon>
+    </None>
+    <None Include="feedbacks\ds_feedbacks.xsx">
+      <DependentUpon>ds_feedbacks.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\plate\ds_plate_diamonds.xsx">
+      <DependentUpon>ds_plate_diamonds.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\plate\ds_plate_gemstones.xsx">
+      <DependentUpon>ds_plate_gemstones.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\plate\ds_plate_jewelry.xsx">
+      <DependentUpon>ds_plate_jewelry.xsd</DependentUpon>
+    </None>
+    <None Include="inventory\plate\ds_plate_main.xsx">
+      <DependentUpon>ds_plate_main.xsd</DependentUpon>
+    </None>
+    <None Include="library\ds_syscounters.xsx">
+      <DependentUpon>ds_syscounters.xsd</DependentUpon>
+    </None>
+    <None Include="library\logging\ds_log_ERRORLOG.xsx">
+      <DependentUpon>ds_log_ERRORLOG.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="new\agent-logging\ds_agents.xsx">
+      <DependentUpon>ds_agents.xsd</DependentUpon>
+    </None>
+    <None Include="new\help\ds_help.xsx">
+      <DependentUpon>ds_help.xsd</DependentUpon>
+    </None>
+    <None Include="new\serverstats\ds_serverstats.xsx">
+      <DependentUpon>ds_serverstats.xsd</DependentUpon>
+    </None>
+    <None Include="new\session-logging\ds_slogging.xsx">
+      <DependentUpon>ds_slogging.xsd</DependentUpon>
+    </None>
+    <None Include="orders\ds_orders.xsc">
+      <DependentUpon>ds_orders.xsd</DependentUpon>
+    </None>
+    <None Include="orders\ds_orders.xss">
+      <DependentUpon>ds_orders.xsd</DependentUpon>
+    </None>
+    <None Include="orders\ds_orders.xsx">
+      <DependentUpon>ds_orders.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iDAC\v3\iDac.vbproj">
+      <Project>{5E2F0518-8FD0-43E9-8459-A6DC5358F691}</Project>
+      <Name>iDac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iFoundation\v3\iFoundation.vbproj">
+      <Project>{DA8EA39F-B6E5-4767-A311-666E14467F51}</Project>
+      <Name>iFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iFunctions\v3\iFunctions.vbproj">
+      <Project>{71B53278-AE23-4F49-ACB7-6A07ED69021C}</Project>
+      <Name>iFunctions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\iLogging\v3\iLogging.vbproj">
+      <Project>{6FA6098C-C87C-421A-BD81-A2FF5B0307A1}</Project>
+      <Name>iLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ion-idac\ion-idac.vbproj">
+      <Project>{D5D6FF19-6311-4451-BDCE-98B610E16408}</Project>
+      <Name>ion-idac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ion-two\ion-two.vbproj">
+      <Project>{C0BDA706-F613-460E-9152-D0E623D464CA}</Project>
+      <Name>ion-two</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

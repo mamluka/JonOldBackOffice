@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<tree  id="0">
+    <item text="My Computer" id="1" child="1"  call="true" select="yes">  
+        <userdata name="system">true</userdata> 
+        <item text="Floppy (A:)" id="11" />  
+            <item text="Local Disk (C:)" id="12" child="0" >
+                <item text="Floppy (A:)" id="31" />
+                <item text="Floppy (A:)" id="31" />
+            </item>  
+        </item>
+   
+    <item text="Recycle Bin" id="4" child="0" /> 
+</tree>

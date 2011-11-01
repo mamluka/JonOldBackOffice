@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_feedbacks" targetNamespace="http://tempuri.org/ds_feedbacks.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ds_feedbacks.xsd" xmlns:mstns="http://tempuri.org/ds_feedbacks.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="ds_feedbacks" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="usr_FEEDBACKS">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="user_id" type="xs:int" minOccurs="0" />
+                            <xs:element name="user_name" type="xs:string" minOccurs="0" />
+                            <xs:element name="user_email" type="xs:string" minOccurs="0" />
+                            <xs:element name="showemail" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="active" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="deleted" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="createdate" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="text" type="xs:string" minOccurs="0" />
+                            <xs:element name="country" type="xs:string" minOccurs="0" />
+                            <xs:element name="state" type="xs:string" minOccurs="0" />
+                            <xs:element name="item1_id" type="xs:int" minOccurs="0" />
+                            <xs:element name="item2_id" type="xs:int" minOccurs="0" />
+                            <xs:element name="item3_id" type="xs:int" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+        <xs:unique name="ds_feedbacksKey1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:usr_FEEDBACKS" />
+            <xs:field xpath="mstns:id" />
+        </xs:unique>
+    </xs:element>
+</xs:schema>
