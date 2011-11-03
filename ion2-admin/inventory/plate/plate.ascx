@@ -117,16 +117,10 @@
 				<TR>
 					<TD style="WIDTH: 133px; HEIGHT: 28px" width="133"><asp:label id="Label13" runat="server" ForeColor="MidnightBlue" Width="120px" Font-Size="8pt"
 							Font-Names="verdana,arial">Item in Specials</asp:label></TD>
-					<TD style="HEIGHT: 28px" width="190"><asp:checkbox id="chk_item_special" runat="server" BackColor="#C0C0FF" AutoPostBack="True"></asp:checkbox></TD>
+					<TD style="HEIGHT: 28px" width="190"><asp:checkbox id="chk_item_special" 
+                            runat="server" BackColor="#C0C0FF"></asp:checkbox></TD>
 					<TD style="HEIGHT: 28px" width="120" colSpan="2">
-                        <asp:rangevalidator id="vld_date_to" runat="server" Width="264px" 
-                            Font-Size="8pt" Font-Names="verdana,arial"
-							ControlToValidate="txt_special_to_date" ErrorMessage="TO date cannot be before FROM date" 
-                            Type="Date" Enabled="False"></asp:rangevalidator>
-                        <asp:rangevalidator id="vld_date_from" runat="server" Width="264px" 
-                            Font-Size="8pt" Font-Names="verdana,arial"
-							ControlToValidate="txt_special_from_date" ErrorMessage="FROM date cannot be before TODAY" 
-                            Type="Date" Enabled="False"></asp:rangevalidator></TD>
+                        &nbsp;</TD>
 				</TR>
 				<TR>
 					<TD style="WIDTH: 133px" width="133"><asp:label id="Label59" runat="server" ForeColor="MidnightBlue" Width="104px" Font-Size="8pt"

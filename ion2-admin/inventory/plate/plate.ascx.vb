@@ -1891,24 +1891,24 @@ ErrorHandler:
 
 
         '--- Define defaults for special-dates Validators
-        Me.vld_date_from.MinimumValue = CStr(Today.Date)
-        Me.vld_date_from.MaximumValue = CStr(DateAdd(DateInterval.Day, Application("defaults").inv_advance_special_date, Today.Date))
-
-        Me.vld_date_to.MinimumValue = CStr(Today.Date)
-        Me.vld_date_to.MaximumValue = CStr(DateAdd(DateInterval.Day, Application("defaults").inv_active_special_date, Today.Date))
-
-        If Me.chk_item_special.Checked Then
-            'Me.vld_date_from.Enabled = True
-            Me.vld_date_from.Enabled = False
-
-            Me.vld_date_to.Enabled = True
-            Me.vld_date_to.Validate()
-
-        Else
-            Me.vld_date_from.Enabled = False
-            Me.vld_date_to.Enabled = False
-
-        End If
+'        Me.vld_date_from.MinimumValue = CStr(Today.Date)
+'        Me.vld_date_from.MaximumValue = CStr(DateAdd(DateInterval.Day, Application("defaults").inv_advance_special_date, Today.Date))
+'
+'        Me.vld_date_to.MinimumValue = CStr(Today.Date)
+'        Me.vld_date_to.MaximumValue = CStr(DateAdd(DateInterval.Day, Application("defaults").inv_active_special_date, Today.Date))
+'
+'        If Me.chk_item_special.Checked Then
+'            'Me.vld_date_from.Enabled = True
+'            Me.vld_date_from.Enabled = False
+'
+'            Me.vld_date_to.Enabled = True
+'            Me.vld_date_to.Validate()
+'
+'        Else
+'            Me.vld_date_from.Enabled = False
+'            Me.vld_date_to.Enabled = False
+'
+'        End If
 
 
         '--- 

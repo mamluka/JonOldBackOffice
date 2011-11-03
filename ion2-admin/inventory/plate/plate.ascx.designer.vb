@@ -401,24 +401,6 @@ Partial Public Class plate
     Protected WithEvents chk_item_special As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
-    '''vld_date_to control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents vld_date_to As Global.System.Web.UI.WebControls.RangeValidator
-
-    '''<summary>
-    '''vld_date_from control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents vld_date_from As Global.System.Web.UI.WebControls.RangeValidator
-
-    '''<summary>
     '''Label59 control.
     '''</summary>
     '''<remarks>
