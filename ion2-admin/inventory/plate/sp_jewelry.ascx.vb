@@ -658,9 +658,9 @@ ErrorHandler:
                 oTmpSubPlate._jewel_extended.ss_cut = ext_s_cut.SelectedItem.Text
                 oTmpSubPlate._jewel_extended.ss_type = ext_s_type.SelectedItem.Text
 
-        If ext_c_type.SelectedItem.Text.IndexOf("Diamond") = -1 Then
-            oTmpSubPlate._jewel_extended.has_sidestones = True
-        End If
+        'If ext_c_type.SelectedItem.Text.IndexOf("Diamond") = -1 Then
+        '    oTmpSubPlate._jewel_extended.has_sidestones = True
+        'End If
 
 
 
@@ -734,6 +734,8 @@ ErrorHandler:
                         Case "je_sidestoneweight"
                             Dim tmptext As WebControls.TextBox = schema_controls.FindControl(control.ID)
                             oTmpSubPlate._jewel_extended.ss_weight = Convert.ToDecimal(tmptext.Text)
+
+
                         Case "je_totalstoneweight"
                             Dim tmptext As WebControls.TextBox = schema_controls.FindControl(control.ID)
                             oTmpSubPlate._jewel_extended.total_weight = Convert.ToDecimal(tmptext.Text)
@@ -771,6 +773,8 @@ ErrorHandler:
                             oTmpSubPlate._jewel_extended.ss_count = tmptext.Text
                             If Convert.ToInt32(tmptext.Text) > 0 Then
                                 oTmpSubPlate._jewel_extended.has_sidestones = True
+                            Else
+                                oTmpSubPlate._jewel_extended.has_sidestones = False
                             End If
                         Case "je_centerstonecount"
                             Dim tmptext As WebControls.TextBox = schema_controls.FindControl(control.ID)

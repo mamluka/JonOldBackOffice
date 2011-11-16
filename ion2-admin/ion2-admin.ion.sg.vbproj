@@ -90,7 +90,7 @@
       <Project>{6FA6098C-C87C-421A-BD81-A2FF5B0307A1}</Project>
       <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
     </ProjectReference>
-    <ProjectReference Include="..\..\development-net\ION-parts\ion-idac\ion-idac.vbproj">
+    <ProjectReference Include="..\ion-idac\ion-idac.vbproj">
       <Name>ion-idac</Name>
       <Project>{D5D6FF19-6311-4451-BDCE-98B610E16408}</Project>
       <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
